@@ -23,7 +23,4 @@
 - (void)addApplication:(NSSet *)values;
 - (void)removeApplication:(NSSet *)values;
 
-+ (Applicant *)findOrCreateApplicantWithName:(NSString *)name context:(NSManagedObjectContext *)context;
-+ (NSArray *)findApplicantsWithName:(NSString *)name context:(NSManagedObjectContext *)context;
-
 @end

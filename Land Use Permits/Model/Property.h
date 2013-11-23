@@ -25,7 +25,4 @@
 - (void)addApplications:(NSSet *)values;
 - (void)removeApplications:(NSSet *)values;
 
-+ (Property *)findOrCreatePropertyWithAddress:(NSString *)address context:(NSManagedObjectContext *)context;
-+ (NSArray *)findPropertiesWithAddress:(NSString *)address context:(NSManagedObjectContext *)context;
-
 @end

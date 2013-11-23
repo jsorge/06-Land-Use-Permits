@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93AEF5CD184056F50064D1F4 /* Application+FindAndCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AEF5CC184056F50064D1F4 /* Application+FindAndCreate.m */; };
+		93AEF5D01840571C0064D1F4 /* Property+FindAndCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AEF5CF1840571C0064D1F4 /* Property+FindAndCreate.m */; };
+		93AEF5D3184057330064D1F4 /* Applicant+FindAndCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AEF5D2184057330064D1F4 /* Applicant+FindAndCreate.m */; };
 		93D560BB18404ABE00933529 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D560BA18404ABE00933529 /* Cocoa.framework */; };
 		93D560C518404ABF00933529 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93D560C318404ABF00933529 /* InfoPlist.strings */; };
 		93D560C718404ABF00933529 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D560C618404ABF00933529 /* main.m */; };
@@ -36,6 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		93AEF5CB184056F50064D1F4 /* Application+FindAndCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Application+FindAndCreate.h"; path = "Model/Application+FindAndCreate.h"; sourceTree = "<group>"; };
+		93AEF5CC184056F50064D1F4 /* Application+FindAndCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Application+FindAndCreate.m"; path = "Model/Application+FindAndCreate.m"; sourceTree = "<group>"; };
+		93AEF5CE1840571C0064D1F4 /* Property+FindAndCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Property+FindAndCreate.h"; path = "Model/Property+FindAndCreate.h"; sourceTree = "<group>"; };
+		93AEF5CF1840571C0064D1F4 /* Property+FindAndCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Property+FindAndCreate.m"; path = "Model/Property+FindAndCreate.m"; sourceTree = "<group>"; };
+		93AEF5D1184057330064D1F4 /* Applicant+FindAndCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Applicant+FindAndCreate.h"; path = "Model/Applicant+FindAndCreate.h"; sourceTree = "<group>"; };
+		93AEF5D2184057330064D1F4 /* Applicant+FindAndCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Applicant+FindAndCreate.m"; path = "Model/Applicant+FindAndCreate.m"; sourceTree = "<group>"; };
 		93D560B718404ABE00933529 /* Land Use Permits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Land Use Permits.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D560BA18404ABE00933529 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		93D560BD18404ABF00933529 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -175,10 +184,16 @@
 				93D560D518404ABF00933529 /* JMSDocument.xcdatamodeld */,
 				93D560FA18404F8500933529 /* Application.h */,
 				93D560FB18404F8500933529 /* Application.m */,
+				93AEF5CB184056F50064D1F4 /* Application+FindAndCreate.h */,
+				93AEF5CC184056F50064D1F4 /* Application+FindAndCreate.m */,
 				93D560F718404F8500933529 /* Property.h */,
 				93D560F818404F8500933529 /* Property.m */,
+				93AEF5CE1840571C0064D1F4 /* Property+FindAndCreate.h */,
+				93AEF5CF1840571C0064D1F4 /* Property+FindAndCreate.m */,
 				93D560F418404F8400933529 /* Applicant.h */,
 				93D560F518404F8400933529 /* Applicant.m */,
+				93AEF5D1184057330064D1F4 /* Applicant+FindAndCreate.h */,
+				93AEF5D2184057330064D1F4 /* Applicant+FindAndCreate.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -286,6 +301,9 @@
 				93D560FC18404F8500933529 /* Application.m in Sources */,
 				93D560F918404F8500933529 /* Property.m in Sources */,
 				93D560D718404ABF00933529 /* JMSDocument.xcdatamodeld in Sources */,
+				93AEF5D3184057330064D1F4 /* Applicant+FindAndCreate.m in Sources */,
+				93AEF5D01840571C0064D1F4 /* Property+FindAndCreate.m in Sources */,
+				93AEF5CD184056F50064D1F4 /* Application+FindAndCreate.m in Sources */,
 				93D560C718404ABF00933529 /* main.m in Sources */,
 				93D560F618404F8400933529 /* Applicant.m in Sources */,
 				93D560CE18404ABF00933529 /* JMSDocument.m in Sources */,
@@ -507,6 +525,7 @@
 				93D560F018404ABF00933529 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93D560F118404ABF00933529 /* Build configuration list for PBXNativeTarget "Land Use PermitsTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +534,7 @@
 				93D560F318404ABF00933529 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
