@@ -10,7 +10,7 @@
 
 @interface Application (FindAndCreate)
 
-+ (Application *)findOrCreateApplicationWithName:(NSString *)name context:(NSManagedObjectContext *)context;
++ (Application *)findOrCreateApplicationWithPermitNumber:(NSString *)permitNumber context:(NSManagedObjectContext *)context;
 + (NSArray *)applicationsWithPermitNumber:(NSString *)permitNumber context:(NSManagedObjectContext *)context;
 
 @end
