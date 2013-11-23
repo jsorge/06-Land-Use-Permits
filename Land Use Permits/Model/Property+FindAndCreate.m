@@ -9,7 +9,7 @@
 #import "Property+FindAndCreate.h"
 
 NSString *const fetchPropertyByAddress = @"FetchPropertyByAddress";
-NSString *const fetchPropertyByAddressVariable = @"$address";
+NSString *const fetchPropertyByAddressToken = @"$address";
 NSString *const propertyEntityName = @"Property";
 NSString *dataModelName = @"JMSDocument";
 NSString *dataModelExtension = @"momd";
@@ -52,7 +52,7 @@ NSString *dataModelExtension = @"momd";
     NSURL *modelURL = [[NSBundle mainBundle] URLForResource:dataModelName withExtension:dataModelExtension];
     NSManagedObjectModel *model = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     
-    NSFetchRequest *fetch = [model fetchRequestFromTemplateWithName:fetchPropertyByAddress substitutionVariables:@{fetchPropertyByAddressVariable: address}];
+    NSFetchRequest *fetch = [model fetchRequestFromTemplateWithName:fetchPropertyByAddress substitutionVariables:@{fetchPropertyByAddressToken: address}];
     NSArray *fetchResult = [context executeFetchRequest:fetch error:&error];
     
     return fetchResult;
