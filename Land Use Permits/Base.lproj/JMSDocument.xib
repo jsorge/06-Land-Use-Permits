@@ -13,7 +13,7 @@
         <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" wantsToBeColor="NO" visibleAtLaunch="NO" animationBehavior="default" id="5" userLabel="Window">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="133" y="235" width="760" height="487"/>
+            <rect key="contentRect" x="304" y="204" width="760" height="487"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
             <value key="minSize" type="size" width="94" height="86"/>
             <view key="contentView" id="6">
@@ -56,6 +56,9 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                <connections>
+                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.address" id="y3a-I1-yQe"/>
+                                                                </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="Nu3-Wy-kBn">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Appealed?">
@@ -69,6 +72,9 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                <connections>
+                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.appealed" id="vC3-Yb-lGP"/>
+                                                                </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="mjJ-34-f3r">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Name">
@@ -82,6 +88,9 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                <connections>
+                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.applicantName" id="8rh-cP-60b"/>
+                                                                </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="NdR-YP-3yf">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Date">
@@ -95,6 +104,9 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                <connections>
+                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.applicationDate" id="Y9U-WC-4P8"/>
+                                                                </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="EvD-mg-Ig5">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Description">
@@ -108,6 +120,9 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                <connections>
+                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.applicationDescription" id="iKq-Es-kma"/>
+                                                                </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="ZYX-tt-sKl">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Permit #">
@@ -121,6 +136,9 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                <connections>
+                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.applicationPermitNumber" id="lhi-fB-CJL"/>
+                                                                </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="tJE-0R-9Kb">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Category">
@@ -134,6 +152,9 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                <connections>
+                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.category" id="4Fz-yo-NFH"/>
+                                                                </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="vJZ-ce-Qi8">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Contractor">
@@ -147,6 +168,9 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                <connections>
+                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.contractor" id="HhB-WJ-9P4"/>
+                                                                </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="Hm5-nz-3Cc">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Decision Date">
@@ -160,6 +184,9 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                <connections>
+                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.decisionDate" id="Y9s-rZ-EcC"/>
+                                                                </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="lF8-9D-KIn">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Decision Type">
@@ -173,6 +200,9 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                <connections>
+                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.decisionType" id="c56-ge-TvF"/>
+                                                                </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="MFh-kr-D3v">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Design Review Included?">
@@ -186,6 +216,9 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                <connections>
+                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.designReviewIncluded" id="QOc-de-0mH"/>
+                                                                </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="Spa-mG-YAN">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Latitude">
@@ -199,6 +232,9 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                <connections>
+                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.latitude" id="7dp-hF-DbS"/>
+                                                                </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="bMn-X4-ePR">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Longitude">
@@ -212,6 +248,9 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                <connections>
+                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.longitude" id="mT1-h1-pLc"/>
+                                                                </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="i0G-FC-8mh">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Status">
@@ -225,6 +264,9 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                <connections>
+                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.status" id="KEk-Es-bFX"/>
+                                                                </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="1Hl-db-5Hd">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Status URL">
@@ -238,6 +280,9 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                <connections>
+                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.statusURL" id="8e1-bt-gHb"/>
+                                                                </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="QNh-xF-9Sm">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Permit Type">
@@ -251,6 +296,9 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                <connections>
+                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.permitType" id="zbx-2E-Ddt"/>
+                                                                </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="H0k-kW-tBm">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Value">
@@ -264,6 +312,9 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                <connections>
+                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.value" id="iAc-Yh-xvM"/>
+                                                                </connections>
                                                             </tableColumn>
                                                         </tableColumns>
                                                     </tableView>
@@ -274,7 +325,7 @@
                                                 <rect key="frame" x="1" y="210" width="678" height="16"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
-                                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="37" horizontal="NO" id="xpU-5q-W5n">
+                                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="xpU-5q-W5n">
                                                 <rect key="frame" x="-15" y="17" width="16" height="0.0"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
@@ -290,6 +341,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="add:" target="Auj-mx-vek" id="efB-eK-KYB"/>
+                                            </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iy6-93-O1H">
                                             <rect key="frame" x="87" y="161" width="48" height="32"/>
@@ -298,6 +352,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="remove:" target="Auj-mx-vek" id="wJN-01-mYU"/>
+                                            </connections>
                                         </button>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="53Q-1l-VGK">
                                             <rect key="frame" x="152" y="167" width="228" height="22"/>
@@ -307,6 +364,9 @@
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
+                                            <connections>
+                                                <binding destination="Auj-mx-vek" name="value" keyPath="selection.applicationPermitNumber" id="d9s-hg-E3r"/>
+                                            </connections>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kcx-Mp-j3R">
                                             <rect key="frame" x="411" y="170" width="66" height="17"/>
@@ -322,7 +382,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Ae0-0b-mR8" id="Wg6-vv-SH2">
                                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="system"/>
+                                                <font key="font" metaFont="menu"/>
                                                 <menu key="menu" title="OtherViews" id="0hK-Kk-YMr">
                                                     <items>
                                                         <menuItem title="Item 1" state="on" id="Ae0-0b-mR8"/>
@@ -331,6 +391,9 @@
                                                     </items>
                                                 </menu>
                                             </popUpButtonCell>
+                                            <connections>
+                                                <binding destination="GnQ-N5-KHm" name="contentValues" keyPath="arrangedObjects.address" id="pIW-6I-HEy"/>
+                                            </connections>
                                         </popUpButton>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wFH-8H-hwH">
                                             <rect key="frame" x="409" y="145" width="68" height="17"/>
@@ -402,6 +465,9 @@
                                                         <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                         <size key="minSize" width="336" height="110"/>
                                                         <size key="maxSize" width="463" height="10000000"/>
+                                                        <connections>
+                                                            <binding destination="Auj-mx-vek" name="data" keyPath="selection.applicationDescription" id="mVh-XI-dnd"/>
+                                                        </connections>
                                                     </textView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -423,6 +489,9 @@
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
+                                            <connections>
+                                                <binding destination="Auj-mx-vek" name="value" keyPath="selection.value" id="x79-a8-I2n"/>
+                                            </connections>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yio-Pk-a8g">
                                             <rect key="frame" x="483" y="52" width="184" height="22"/>
@@ -432,6 +501,9 @@
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
+                                            <connections>
+                                                <binding destination="Auj-mx-vek" name="value" keyPath="selection" id="fUC-3S-ABb"/>
+                                            </connections>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bXM-f0-7v3">
                                             <rect key="frame" x="483" y="77" width="184" height="22"/>
@@ -441,6 +513,9 @@
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
+                                            <connections>
+                                                <binding destination="Auj-mx-vek" name="value" keyPath="selection.decisionDate" id="f00-EA-pHj"/>
+                                            </connections>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mhA-ZE-BZj">
                                             <rect key="frame" x="483" y="104" width="184" height="22"/>
@@ -450,13 +525,16 @@
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
+                                            <connections>
+                                                <binding destination="Auj-mx-vek" name="value" keyPath="selection.applicationDate" id="RRv-rF-mf5"/>
+                                            </connections>
                                         </textField>
                                         <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qc7-5e-HGO">
                                             <rect key="frame" x="483" y="140" width="187" height="26"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <popUpButtonCell key="cell" type="push" title="Item 1" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="3XL-rk-zUv" id="AUX-AL-bpl">
                                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="system"/>
+                                                <font key="font" metaFont="menu"/>
                                                 <menu key="menu" title="OtherViews" id="NbQ-o1-v4I">
                                                     <items>
                                                         <menuItem title="Item 1" state="on" id="3XL-rk-zUv"/>
@@ -465,6 +543,9 @@
                                                     </items>
                                                 </menu>
                                             </popUpButtonCell>
+                                            <connections>
+                                                <binding destination="Nrf-cL-1uG" name="contentValues" keyPath="arrangedObjects.name" id="Mwy-LU-hTY"/>
+                                            </connections>
                                         </popUpButton>
                                     </subviews>
                                 </view>
@@ -500,6 +581,9 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                <connections>
+                                                                    <binding destination="aUz-mS-5d7" name="value" keyPath="arrangedObjects.address" id="0LF-ot-dYo"/>
+                                                                </connections>
                                                             </tableColumn>
                                                             <tableColumn width="100" minWidth="40" maxWidth="1000" id="Y1B-qy-1n9">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Latitude">
@@ -513,6 +597,9 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                <connections>
+                                                                    <binding destination="aUz-mS-5d7" name="value" keyPath="arrangedObjects.latitude" id="gIP-Im-ucI"/>
+                                                                </connections>
                                                             </tableColumn>
                                                             <tableColumn width="100" minWidth="10" maxWidth="3.4028234663852886e+38" id="2Iy-vG-eku">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Longitude">
@@ -526,6 +613,9 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                <connections>
+                                                                    <binding destination="aUz-mS-5d7" name="value" keyPath="arrangedObjects.longitude" id="kJd-yH-lZ3"/>
+                                                                </connections>
                                                             </tableColumn>
                                                         </tableColumns>
                                                     </tableView>
@@ -536,7 +626,7 @@
                                                 <rect key="frame" x="1" y="1" width="0.0" height="16"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
-                                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="37" horizontal="NO" id="Ihc-fT-z8m">
+                                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Ihc-fT-z8m">
                                                 <rect key="frame" x="-15" y="17" width="16" height="0.0"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
@@ -578,6 +668,9 @@
                                                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                             </textFieldCell>
                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                            <connections>
+                                                                                <binding destination="Ur9-Au-0QN" name="value" keyPath="arrangedObjects.applicationPermitNumber" id="Xm7-ec-UYA"/>
+                                                                            </connections>
                                                                         </tableColumn>
                                                                         <tableColumn width="145" minWidth="40" maxWidth="1000" id="Zh8-rU-nCe">
                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Applicant">
@@ -591,6 +684,9 @@
                                                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                             </textFieldCell>
                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                            <connections>
+                                                                                <binding destination="Ur9-Au-0QN" name="value" keyPath="arrangedObjects.applicantName" id="AHN-Oo-Cfv"/>
+                                                                            </connections>
                                                                         </tableColumn>
                                                                         <tableColumn width="110" minWidth="10" maxWidth="3.4028234663852886e+38" id="M8o-Qa-BWz">
                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Application Date">
@@ -604,6 +700,9 @@
                                                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                             </textFieldCell>
                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                            <connections>
+                                                                                <binding destination="Ur9-Au-0QN" name="value" keyPath="arrangedObjects.applicationDate" id="Ypt-zi-dMK"/>
+                                                                            </connections>
                                                                         </tableColumn>
                                                                         <tableColumn width="110" minWidth="10" maxWidth="3.4028234663852886e+38" id="89e-Tg-pPd">
                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Status">
@@ -617,6 +716,9 @@
                                                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                             </textFieldCell>
                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                            <connections>
+                                                                                <binding destination="Ur9-Au-0QN" name="value" keyPath="arrangedObjects.status" id="Wvx-Pa-Zvm"/>
+                                                                            </connections>
                                                                         </tableColumn>
                                                                         <tableColumn width="110" minWidth="10" maxWidth="3.4028234663852886e+38" id="Xhe-VL-v4J">
                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Value">
@@ -630,6 +732,9 @@
                                                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                             </textFieldCell>
                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                            <connections>
+                                                                                <binding destination="Ur9-Au-0QN" name="value" keyPath="arrangedObjects.value" id="YcV-kn-xQO"/>
+                                                                            </connections>
                                                                         </tableColumn>
                                                                     </tableColumns>
                                                                 </tableView>
@@ -640,7 +745,7 @@
                                                             <rect key="frame" x="1" y="1" width="0.0" height="16"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </scroller>
-                                                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="37" horizontal="NO" id="PBD-uB-0CY">
+                                                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="PBD-uB-0CY">
                                                             <rect key="frame" x="-15" y="17" width="16" height="0.0"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </scroller>
@@ -661,6 +766,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="add:" target="aUz-mS-5d7" id="hGG-ob-Aws"/>
+                                            </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6a3-q3-D2u">
                                             <rect key="frame" x="70" y="237" width="48" height="32"/>
@@ -669,6 +777,9 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
+                                            <connections>
+                                                <action selector="remove:" target="aUz-mS-5d7" id="Z4C-XT-DWi"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </view>
@@ -704,6 +815,9 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                <connections>
+                                                                    <binding destination="gvH-Vu-rDo" name="value" keyPath="arrangedObjects.name" id="aNE-V1-6Jl"/>
+                                                                </connections>
                                                             </tableColumn>
                                                             <tableColumn width="422" minWidth="40" maxWidth="1000" id="VSx-IK-y3T">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Application Count">
@@ -717,6 +831,9 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                <connections>
+                                                                    <binding destination="gvH-Vu-rDo" name="value" keyPath="arrangedObjects.@count.application" id="Bzb-cj-dvF"/>
+                                                                </connections>
                                                             </tableColumn>
                                                         </tableColumns>
                                                     </tableView>
@@ -727,7 +844,7 @@
                                                 <rect key="frame" x="1" y="1" width="0.0" height="16"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
-                                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="37" horizontal="NO" id="xDq-GQ-xDJ">
+                                            <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="xDq-GQ-xDJ">
                                                 <rect key="frame" x="-15" y="17" width="16" height="0.0"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
@@ -752,6 +869,130 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                         </button>
+                                        <box autoresizesSubviews="NO" fixedFrame="YES" title="Applications For Selected Applicant" borderType="line" translatesAutoresizingMaskIntoConstraints="NO" id="Ws5-GZ-uy0">
+                                            <rect key="frame" x="14" y="5" width="686" height="213"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <view key="contentView">
+                                                <rect key="frame" x="1" y="1" width="684" height="197"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xk7-Bw-bV5">
+                                                        <rect key="frame" x="18" y="17" width="643" height="170"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                        <clipView key="contentView" ambiguous="YES" misplaced="YES" id="jVo-nQ-dxX">
+                                                            <rect key="frame" x="1" y="17" width="641" height="152"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <subviews>
+                                                                <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" headerView="9CY-2p-a7W" id="7z9-RP-cxk">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="641" height="152"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <size key="intercellSpacing" width="3" height="2"/>
+                                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                                                    <tableColumns>
+                                                                        <tableColumn width="125" minWidth="40" maxWidth="1000" id="5td-3c-bLE">
+                                                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Application #">
+                                                                                <font key="font" metaFont="smallSystem"/>
+                                                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                                                            </tableHeaderCell>
+                                                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="uN7-OX-NV5">
+                                                                                <font key="font" metaFont="system"/>
+                                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                            </textFieldCell>
+                                                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                            <connections>
+                                                                                <binding destination="ivd-kf-MBE" name="value" keyPath="arrangedObjects.applicationPermitNumber" id="Otc-Sq-hFb"/>
+                                                                            </connections>
+                                                                        </tableColumn>
+                                                                        <tableColumn width="145" minWidth="40" maxWidth="1000" id="8Qy-bX-gR9">
+                                                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Applicant">
+                                                                                <font key="font" metaFont="smallSystem"/>
+                                                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" white="0.33333298560000002" alpha="1" colorSpace="calibratedWhite"/>
+                                                                            </tableHeaderCell>
+                                                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="zOz-ak-Z8J">
+                                                                                <font key="font" metaFont="system"/>
+                                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                            </textFieldCell>
+                                                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                            <connections>
+                                                                                <binding destination="ivd-kf-MBE" name="value" keyPath="arrangedObjects.address" id="ubb-MV-t8s"/>
+                                                                            </connections>
+                                                                        </tableColumn>
+                                                                        <tableColumn width="110" minWidth="10" maxWidth="3.4028234663852886e+38" id="gtG-07-h6R">
+                                                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Application Date">
+                                                                                <font key="font" metaFont="smallSystem"/>
+                                                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                                            </tableHeaderCell>
+                                                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="kcQ-gJ-tv1">
+                                                                                <font key="font" metaFont="system"/>
+                                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                            </textFieldCell>
+                                                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                            <connections>
+                                                                                <binding destination="ivd-kf-MBE" name="value" keyPath="arrangedObjects.applicationDate" id="TEY-IX-Qgh"/>
+                                                                            </connections>
+                                                                        </tableColumn>
+                                                                        <tableColumn width="110" minWidth="10" maxWidth="3.4028234663852886e+38" id="qMq-HE-ifb">
+                                                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Status">
+                                                                                <font key="font" metaFont="smallSystem"/>
+                                                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                                            </tableHeaderCell>
+                                                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="zuY-my-TYJ">
+                                                                                <font key="font" metaFont="system"/>
+                                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                            </textFieldCell>
+                                                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                            <connections>
+                                                                                <binding destination="ivd-kf-MBE" name="value" keyPath="arrangedObjects.status" id="wrE-Ez-QOY"/>
+                                                                            </connections>
+                                                                        </tableColumn>
+                                                                        <tableColumn width="110" minWidth="10" maxWidth="3.4028234663852886e+38" id="ZO9-dU-cgo">
+                                                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Value">
+                                                                                <font key="font" metaFont="smallSystem"/>
+                                                                                <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                                            </tableHeaderCell>
+                                                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="ean-A4-V1a">
+                                                                                <font key="font" metaFont="system"/>
+                                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                            </textFieldCell>
+                                                                            <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                                            <connections>
+                                                                                <binding destination="ivd-kf-MBE" name="value" keyPath="arrangedObjects.value" id="xMd-1Q-YfF"/>
+                                                                            </connections>
+                                                                        </tableColumn>
+                                                                    </tableColumns>
+                                                                </tableView>
+                                                            </subviews>
+                                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                        </clipView>
+                                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="lxQ-3n-ydq">
+                                                            <rect key="frame" x="1" y="1" width="0.0" height="16"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </scroller>
+                                                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="5aZ-VK-S7f">
+                                                            <rect key="frame" x="-15" y="17" width="16" height="0.0"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </scroller>
+                                                        <tableHeaderView key="headerView" id="9CY-2p-a7W">
+                                                            <rect key="frame" x="0.0" y="0.0" width="641" height="17"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                        </tableHeaderView>
+                                                    </scrollView>
+                                                </subviews>
+                                            </view>
+                                            <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                                            <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </box>
                                     </subviews>
                                 </view>
                             </tabViewItem>
@@ -789,11 +1030,40 @@
             </connections>
         </window>
         <customObject id="-3" userLabel="Application"/>
-        <viewController id="2nL-YH-d1L" userLabel="Popover View Controller"/>
-        <popover id="5ag-pn-fmJ">
+        <arrayController mode="entity" entityName="Application" automaticallyPreparesContent="YES" id="Auj-mx-vek" userLabel="Application Array Controller">
             <connections>
-                <outlet property="contentViewController" destination="2nL-YH-d1L" id="w23-yl-iyc"/>
+                <binding destination="-2" name="managedObjectContext" keyPath="self.managedObjectContext" id="dJi-jZ-Weu"/>
             </connections>
-        </popover>
+        </arrayController>
+        <arrayController mode="entity" entityName="Applicant" automaticallyPreparesContent="YES" id="gvH-Vu-rDo" userLabel="Applicant Array Controller">
+            <connections>
+                <binding destination="-2" name="managedObjectContext" keyPath="self.managedObjectContext" id="cJv-o8-Pdf"/>
+            </connections>
+        </arrayController>
+        <arrayController mode="entity" entityName="Property" automaticallyPreparesContent="YES" id="aUz-mS-5d7" userLabel="Property Array Controller">
+            <connections>
+                <binding destination="-2" name="managedObjectContext" keyPath="self.managedObjectContext" id="xcJ-za-1QC"/>
+            </connections>
+        </arrayController>
+        <arrayController mode="entity" entityName="Property" automaticallyPreparesContent="YES" id="GnQ-N5-KHm" userLabel="Application Property Array Controller">
+            <connections>
+                <binding destination="Auj-mx-vek" name="managedObjectContext" keyPath="selection.properties" id="Il9-QJ-cvI"/>
+            </connections>
+        </arrayController>
+        <arrayController mode="entity" entityName="Applicant" automaticallyPreparesContent="YES" id="Nrf-cL-1uG" userLabel="Application Applicants Array Controller">
+            <connections>
+                <binding destination="Auj-mx-vek" name="managedObjectContext" keyPath="selection.applicants" id="Y33-XS-fo0"/>
+            </connections>
+        </arrayController>
+        <arrayController mode="entity" entityName="Application" automaticallyPreparesContent="YES" id="Ur9-Au-0QN" userLabel="Property Application Array Controller">
+            <connections>
+                <binding destination="aUz-mS-5d7" name="managedObjectContext" keyPath="selection.applications" id="sGg-JF-gIH"/>
+            </connections>
+        </arrayController>
+        <arrayController mode="entity" entityName="Application" automaticallyPreparesContent="YES" id="ivd-kf-MBE" userLabel="Applicants Applications Array Controller">
+            <connections>
+                <binding destination="gvH-Vu-rDo" name="managedObjectContext" keyPath="selection.application" id="svE-dM-U3U"/>
+            </connections>
+        </arrayController>
     </objects>
 </document>
