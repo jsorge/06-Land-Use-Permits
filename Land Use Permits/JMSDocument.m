@@ -43,7 +43,7 @@
 #pragma mark - IBActions
 
 /**
- *  Creates the fake data to populate the table. Helpful if trying to debug something not model-related
+ *  Creates the fake data to populate the table.
  *
  *  @param sender Not used
  */
