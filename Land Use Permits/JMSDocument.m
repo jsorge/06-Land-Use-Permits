@@ -7,9 +7,9 @@
 //
 
 #import "JMSDocument.h"
-#import "Application.h"
-#import "Applicant.h"
-#import "Property.h"
+#import "Application+FindAndCreate.h"
+#import "Applicant+FindAndCreate.h"
+#import "Property+FindAndCreate.h"
 
 @implementation JMSDocument
 
@@ -49,7 +49,25 @@
  */
 - (IBAction)insertFakeData:(id)sender
 {
+    Applicant *larry = [Applicant findOrCreateApplicantWithName:@"Larry" context:self.managedObjectContext];
+    Applicant *curly = [Applicant findOrCreateApplicantWithName:@"Curly" context:self.managedObjectContext];
+    Applicant *moe = [Applicant findOrCreateApplicantWithName:@"Moe" context:self.managedObjectContext];
     
+    Property *house = [Property findOrCreatePropertyWithAddress:@"123 1st St." context:self.managedObjectContext];
+    Property *shed = [Property findOrCreatePropertyWithAddress:@"123 2nd St." context:self.managedObjectContext];
+    Property *boatLaunch = [Property findOrCreatePropertyWithAddress:@"125 1st St." context:self.managedObjectContext];
+    
+    Application *first = [Application findOrCreateApplicationWithPermitNumber:@"10001" context:self.managedObjectContext];
+    first.applicant = larry;
+    first.property = house;
+    
+    Application *second = [Application findOrCreateApplicationWithPermitNumber:@"10002" context:self.managedObjectContext];
+    second.applicant = curly;
+    second.property = shed;
+    
+    Application *third = [Application findOrCreateApplicationWithPermitNumber:@"10003" context:self.managedObjectContext];
+    third.applicant = moe;
+    third.property = boatLaunch;
 }
 
 @end

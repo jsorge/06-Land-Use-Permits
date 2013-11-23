@@ -26,7 +26,7 @@
                         <font key="font" metaFont="system"/>
                         <tabViewItems>
                             <tabViewItem label="Applications" identifier="1" id="Sbw-rV-Civ">
-                                <view key="view" id="OtN-gg-sk2">
+                                <view key="view" ambiguous="YES" id="OtN-gg-sk2">
                                     <rect key="frame" x="10" y="33" width="714" height="425"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -785,7 +785,7 @@
                                 </view>
                             </tabViewItem>
                             <tabViewItem label="Applicants" identifier="" id="PZZ-cb-PQT">
-                                <view key="view" ambiguous="YES" id="XKl-Zx-Elr">
+                                <view key="view" id="XKl-Zx-Elr">
                                     <rect key="frame" x="10" y="33" width="714" height="425"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -832,7 +832,7 @@
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                 <connections>
-                                                                    <binding destination="gvH-Vu-rDo" name="value" keyPath="arrangedObjects.@count.application" id="Bzb-cj-dvF"/>
+                                                                    <binding destination="gvH-Vu-rDo" name="value" keyPath="arrangedObjects.@count.applications" id="cxM-jU-NAD"/>
                                                                 </connections>
                                                             </tableColumn>
                                                         </tableColumns>
@@ -1002,7 +1002,11 @@
             </view>
             <toolbar key="toolbar" implicitIdentifier="59430BE3-3AE4-4727-A282-1F3B8B931842" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="Ta3-NQ-aWL">
                 <allowedToolbarItems>
-                    <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="S7x-6y-AoG"/>
+                    <toolbarItem implicitItemIdentifier="NSToolbarShowColorsItem" id="S7x-6y-AoG">
+                        <connections>
+                            <action selector="insertFakeData:" target="-2" id="kpl-mF-Wm3"/>
+                        </connections>
+                    </toolbarItem>
                     <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="Hbt-qJ-dLK"/>
                     <toolbarItem implicitItemIdentifier="16CA54BF-EF47-4DBF-84CE-F74B492B8401" label="Search" paletteLabel="Search" id="zPb-VA-6MS">
                         <nil key="toolTip"/>
@@ -1035,9 +1039,24 @@
                 <binding destination="-2" name="managedObjectContext" keyPath="self.managedObjectContext" id="dJi-jZ-Weu"/>
             </connections>
         </arrayController>
+        <arrayController mode="entity" entityName="Property" automaticallyPreparesContent="YES" id="GnQ-N5-KHm" userLabel="Application Property Array Controller">
+            <connections>
+                <binding destination="-2" name="managedObjectContext" keyPath="self.managedObjectContext" id="Xtl-BF-6Ip"/>
+            </connections>
+        </arrayController>
+        <arrayController mode="entity" entityName="Applicant" automaticallyPreparesContent="YES" id="Nrf-cL-1uG" userLabel="Application Applicants Array Controller">
+            <connections>
+                <binding destination="-2" name="managedObjectContext" keyPath="self.managedObjectContext" id="jQb-Kx-6tL"/>
+            </connections>
+        </arrayController>
         <arrayController mode="entity" entityName="Applicant" automaticallyPreparesContent="YES" id="gvH-Vu-rDo" userLabel="Applicant Array Controller">
             <connections>
                 <binding destination="-2" name="managedObjectContext" keyPath="self.managedObjectContext" id="cJv-o8-Pdf"/>
+            </connections>
+        </arrayController>
+        <arrayController mode="entity" entityName="Application" automaticallyPreparesContent="YES" id="ivd-kf-MBE" userLabel="Applicants Applications Array Controller">
+            <connections>
+                <binding destination="gvH-Vu-rDo" name="managedObjectContext" keyPath="selection.applications" id="szr-yB-dDu"/>
             </connections>
         </arrayController>
         <arrayController mode="entity" entityName="Property" automaticallyPreparesContent="YES" id="aUz-mS-5d7" userLabel="Property Array Controller">
@@ -1045,24 +1064,9 @@
                 <binding destination="-2" name="managedObjectContext" keyPath="self.managedObjectContext" id="xcJ-za-1QC"/>
             </connections>
         </arrayController>
-        <arrayController mode="entity" entityName="Property" automaticallyPreparesContent="YES" id="GnQ-N5-KHm" userLabel="Application Property Array Controller">
-            <connections>
-                <binding destination="Auj-mx-vek" name="managedObjectContext" keyPath="selection.properties" id="Il9-QJ-cvI"/>
-            </connections>
-        </arrayController>
-        <arrayController mode="entity" entityName="Applicant" automaticallyPreparesContent="YES" id="Nrf-cL-1uG" userLabel="Application Applicants Array Controller">
-            <connections>
-                <binding destination="Auj-mx-vek" name="managedObjectContext" keyPath="selection.applicants" id="Y33-XS-fo0"/>
-            </connections>
-        </arrayController>
         <arrayController mode="entity" entityName="Application" automaticallyPreparesContent="YES" id="Ur9-Au-0QN" userLabel="Property Application Array Controller">
             <connections>
                 <binding destination="aUz-mS-5d7" name="managedObjectContext" keyPath="selection.applications" id="sGg-JF-gIH"/>
-            </connections>
-        </arrayController>
-        <arrayController mode="entity" entityName="Application" automaticallyPreparesContent="YES" id="ivd-kf-MBE" userLabel="Applicants Applications Array Controller">
-            <connections>
-                <binding destination="gvH-Vu-rDo" name="managedObjectContext" keyPath="selection.application" id="svE-dM-U3U"/>
             </connections>
         </arrayController>
     </objects>

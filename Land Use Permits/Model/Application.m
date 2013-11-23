@@ -2,7 +2,7 @@
 //  Application.m
 //  Land Use Permits
 //
-//  Created by Jared Sorge on 11/22/13.
+//  Created by Jared Sorge on 11/23/13.
 //  Copyright (c) 2013 jsorge. All rights reserved.
 //
 
@@ -13,24 +13,24 @@
 
 @implementation Application
 
-@dynamic applicationDate;
-@dynamic applicationPermitNumber;
-@dynamic permitType;
 @dynamic address;
+@dynamic appealed;
+@dynamic applicantName;
+@dynamic applicationDate;
 @dynamic applicationDescription;
+@dynamic applicationPermitNumber;
 @dynamic category;
+@dynamic contractor;
+@dynamic decisionDate;
 @dynamic decisionType;
 @dynamic designReviewIncluded;
-@dynamic value;
-@dynamic applicantName;
-@dynamic decisionDate;
-@dynamic appealed;
-@dynamic status;
-@dynamic contractor;
-@dynamic statusURL;
 @dynamic latitude;
 @dynamic longitude;
-@dynamic properties;
-@dynamic applicants;
+@dynamic permitType;
+@dynamic status;
+@dynamic statusURL;
+@dynamic value;
+@dynamic applicant;
+@dynamic property;
 
 @end

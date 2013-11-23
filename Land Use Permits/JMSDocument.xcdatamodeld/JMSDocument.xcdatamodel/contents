@@ -2,7 +2,7 @@
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5029" systemVersion="13A603" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Applicant" representedClassName="Applicant" syncable="YES">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="application" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Application" inverseName="applicants" inverseEntity="Application" syncable="YES"/>
+        <relationship name="applications" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Application" inverseName="applicant" inverseEntity="Application" syncable="YES"/>
     </entity>
     <entity name="Application" representedClassName="Application" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
@@ -22,14 +22,14 @@
         <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="statusURL" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="value" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
-        <relationship name="applicants" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Applicant" inverseName="application" inverseEntity="Applicant" syncable="YES"/>
-        <relationship name="properties" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Property" inverseName="applications" inverseEntity="Property" syncable="YES"/>
+        <relationship name="applicant" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Applicant" inverseName="applications" inverseEntity="Applicant" syncable="YES"/>
+        <relationship name="property" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Property" inverseName="applications" inverseEntity="Property" syncable="YES"/>
     </entity>
     <entity name="Property" representedClassName="Property" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
-        <relationship name="applications" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Application" inverseName="properties" inverseEntity="Application" syncable="YES"/>
+        <relationship name="applications" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Application" inverseName="property" inverseEntity="Application" syncable="YES"/>
     </entity>
     <fetchRequest name="FetchApplicantByName" entity="Applicant" predicateString="name CONTAINS &quot;$name&quot;"/>
     <fetchRequest name="FetchApplicationByPermitNumber" entity="Application" predicateString="applicationPermitNumber == &quot;$permitNumber&quot;"/>
