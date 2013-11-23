@@ -10,4 +10,6 @@
 
 @interface JMSDocument : NSPersistentDocument
 
+- (IBAction)insertFakeData:(id)sender;
+
 @end

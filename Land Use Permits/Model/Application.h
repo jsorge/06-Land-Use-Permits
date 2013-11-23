@@ -33,4 +33,7 @@
 @property (nonatomic, retain) Property *properties;
 @property (nonatomic, retain) Applicant *applicants;
 
++ (Application *)findOrCreateApplicationWithName:(NSString *)name context:(NSManagedObjectContext *)context;
++ (NSArray *)applicationsWithPermitNumber:(NSString *)permitNumber context:(NSManagedObjectContext *)context;
+
 @end

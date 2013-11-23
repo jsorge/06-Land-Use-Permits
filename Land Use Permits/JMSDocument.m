@@ -7,6 +7,9 @@
 //
 
 #import "JMSDocument.h"
+#import "Application.h"
+#import "Applicant.h"
+#import "Property.h"
 
 @implementation JMSDocument
 
@@ -35,6 +38,18 @@
 + (BOOL)autosavesInPlace
 {
     return YES;
+}
+
+#pragma mark - IBActions
+
+/**
+ *  Creates the fake data to populate the table. Helpful if trying to debug something not model-related
+ *
+ *  @param sender Not used
+ */
+- (IBAction)insertFakeData:(id)sender
+{
+    
 }
 
 @end
