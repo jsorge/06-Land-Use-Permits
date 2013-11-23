@@ -57,7 +57,7 @@
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                 <connections>
-                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.address" id="y3a-I1-yQe"/>
+                                                                    <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.address" id="60n-ip-RMg"/>
                                                                 </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="Nu3-Wy-kBn">
@@ -73,7 +73,7 @@
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                 <connections>
-                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.appealed" id="vC3-Yb-lGP"/>
+                                                                    <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.appealed" id="Ccr-Sm-A70"/>
                                                                 </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="mjJ-34-f3r">
@@ -89,7 +89,7 @@
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                 <connections>
-                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.applicantName" id="8rh-cP-60b"/>
+                                                                    <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.applicantName" id="3WU-q3-ltr"/>
                                                                 </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="NdR-YP-3yf">
@@ -105,7 +105,7 @@
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                 <connections>
-                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.applicationDate" id="Y9U-WC-4P8"/>
+                                                                    <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.applicationDate" id="wkb-Tc-zM4"/>
                                                                 </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="EvD-mg-Ig5">
@@ -121,7 +121,7 @@
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                 <connections>
-                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.applicationDescription" id="iKq-Es-kma"/>
+                                                                    <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.applicationDescription" id="SvY-Ew-wbI"/>
                                                                 </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="ZYX-tt-sKl">
@@ -137,7 +137,7 @@
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                 <connections>
-                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.applicationPermitNumber" id="lhi-fB-CJL"/>
+                                                                    <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.applicationPermitNumber" id="Wgh-Li-V3T"/>
                                                                 </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="tJE-0R-9Kb">
@@ -153,7 +153,7 @@
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                 <connections>
-                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.category" id="4Fz-yo-NFH"/>
+                                                                    <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.category" id="67H-AG-wgH"/>
                                                                 </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="vJZ-ce-Qi8">
@@ -169,7 +169,7 @@
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                 <connections>
-                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.contractor" id="HhB-WJ-9P4"/>
+                                                                    <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.contractor" id="1a0-Kq-BiB"/>
                                                                 </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="Hm5-nz-3Cc">
@@ -185,7 +185,7 @@
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                 <connections>
-                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.decisionDate" id="Y9s-rZ-EcC"/>
+                                                                    <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.decisionDate" id="vJP-sv-Y67"/>
                                                                 </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="lF8-9D-KIn">
@@ -201,7 +201,7 @@
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                 <connections>
-                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.decisionType" id="c56-ge-TvF"/>
+                                                                    <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.decisionType" id="LUp-hF-09g"/>
                                                                 </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="MFh-kr-D3v">
@@ -217,7 +217,7 @@
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                 <connections>
-                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.designReviewIncluded" id="QOc-de-0mH"/>
+                                                                    <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.designReviewIncluded" id="hLA-bB-zdX"/>
                                                                 </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="Spa-mG-YAN">
@@ -233,7 +233,7 @@
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                 <connections>
-                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.latitude" id="7dp-hF-DbS"/>
+                                                                    <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.latitude" id="OtV-ed-sYI"/>
                                                                 </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="bMn-X4-ePR">
@@ -249,7 +249,7 @@
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                 <connections>
-                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.longitude" id="mT1-h1-pLc"/>
+                                                                    <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.longitude" id="ldh-bE-wz4"/>
                                                                 </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="i0G-FC-8mh">
@@ -265,7 +265,7 @@
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                 <connections>
-                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.status" id="KEk-Es-bFX"/>
+                                                                    <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.status" id="vFW-Ey-Vpq"/>
                                                                 </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="1Hl-db-5Hd">
@@ -281,7 +281,7 @@
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                 <connections>
-                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.statusURL" id="8e1-bt-gHb"/>
+                                                                    <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.statusURL" id="SZ3-fU-LKC"/>
                                                                 </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="QNh-xF-9Sm">
@@ -297,7 +297,7 @@
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                 <connections>
-                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.permitType" id="zbx-2E-Ddt"/>
+                                                                    <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.permitType" id="5zg-Uq-9aH"/>
                                                                 </connections>
                                                             </tableColumn>
                                                             <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="H0k-kW-tBm">
@@ -313,7 +313,7 @@
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                 <connections>
-                                                                    <binding destination="Auj-mx-vek" name="value" keyPath="arrangedObjects.value" id="iAc-Yh-xvM"/>
+                                                                    <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.value" id="fcD-W8-rL7"/>
                                                                 </connections>
                                                             </tableColumn>
                                                         </tableColumns>
@@ -342,7 +342,7 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
-                                                <action selector="add:" target="Auj-mx-vek" id="efB-eK-KYB"/>
+                                                <action selector="add:" target="qFZ-2K-L4N" id="Kzz-jG-mah"/>
                                             </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iy6-93-O1H">
@@ -353,7 +353,7 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                             <connections>
-                                                <action selector="remove:" target="Auj-mx-vek" id="wJN-01-mYU"/>
+                                                <action selector="remove:" target="qFZ-2K-L4N" id="TmO-B9-49Z"/>
                                             </connections>
                                         </button>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="53Q-1l-VGK">
@@ -365,7 +365,7 @@
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                             <connections>
-                                                <binding destination="Auj-mx-vek" name="value" keyPath="selection.applicationPermitNumber" id="d9s-hg-E3r"/>
+                                                <binding destination="qFZ-2K-L4N" name="value" keyPath="selection.applicationPermitNumber" id="Zwh-ac-QT0"/>
                                             </connections>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kcx-Mp-j3R">
@@ -392,7 +392,9 @@
                                                 </menu>
                                             </popUpButtonCell>
                                             <connections>
-                                                <binding destination="GnQ-N5-KHm" name="contentValues" keyPath="arrangedObjects.address" id="pIW-6I-HEy"/>
+                                                <binding destination="4I7-7P-Uyo" name="content" keyPath="arrangedObjects" id="LXr-Zg-JAk"/>
+                                                <binding destination="4I7-7P-Uyo" name="contentValues" keyPath="arrangedObjects.address" previousBinding="LXr-Zg-JAk" id="uUZ-Nc-Xfz"/>
+                                                <binding destination="qFZ-2K-L4N" name="selectedObject" keyPath="selection.property" previousBinding="uUZ-Nc-Xfz" id="NLE-U9-AZC"/>
                                             </connections>
                                         </popUpButton>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wFH-8H-hwH">
@@ -466,7 +468,7 @@
                                                         <size key="minSize" width="336" height="110"/>
                                                         <size key="maxSize" width="463" height="10000000"/>
                                                         <connections>
-                                                            <binding destination="Auj-mx-vek" name="data" keyPath="selection.applicationDescription" id="mVh-XI-dnd"/>
+                                                            <binding destination="qFZ-2K-L4N" name="data" keyPath="selection.applicationDescription" id="F2p-2T-q6d"/>
                                                         </connections>
                                                     </textView>
                                                 </subviews>
@@ -490,7 +492,7 @@
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                             <connections>
-                                                <binding destination="Auj-mx-vek" name="value" keyPath="selection.value" id="x79-a8-I2n"/>
+                                                <binding destination="qFZ-2K-L4N" name="value" keyPath="selection.value" id="AXi-N5-iLr"/>
                                             </connections>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yio-Pk-a8g">
@@ -501,9 +503,6 @@
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
-                                            <connections>
-                                                <binding destination="Auj-mx-vek" name="value" keyPath="selection" id="fUC-3S-ABb"/>
-                                            </connections>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bXM-f0-7v3">
                                             <rect key="frame" x="483" y="77" width="184" height="22"/>
@@ -514,7 +513,7 @@
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                             <connections>
-                                                <binding destination="Auj-mx-vek" name="value" keyPath="selection.decisionDate" id="f00-EA-pHj"/>
+                                                <binding destination="qFZ-2K-L4N" name="value" keyPath="selection.decisionDate" id="e0F-KA-X45"/>
                                             </connections>
                                         </textField>
                                         <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mhA-ZE-BZj">
@@ -526,7 +525,7 @@
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                             <connections>
-                                                <binding destination="Auj-mx-vek" name="value" keyPath="selection.applicationDate" id="RRv-rF-mf5"/>
+                                                <binding destination="qFZ-2K-L4N" name="value" keyPath="selection.applicationDate" id="G7j-VU-F2x"/>
                                             </connections>
                                         </textField>
                                         <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qc7-5e-HGO">
@@ -544,7 +543,9 @@
                                                 </menu>
                                             </popUpButtonCell>
                                             <connections>
-                                                <binding destination="Nrf-cL-1uG" name="contentValues" keyPath="arrangedObjects.name" id="Mwy-LU-hTY"/>
+                                                <binding destination="Ity-OF-W8T" name="content" keyPath="arrangedObjects" id="hZ0-5f-RlJ"/>
+                                                <binding destination="Ity-OF-W8T" name="contentValues" keyPath="arrangedObjects.name" previousBinding="hZ0-5f-RlJ" id="yOg-pR-ooJ"/>
+                                                <binding destination="qFZ-2K-L4N" name="selectedObject" keyPath="selection.address" previousBinding="yOg-pR-ooJ" id="jPA-bv-EXa"/>
                                             </connections>
                                         </popUpButton>
                                     </subviews>
@@ -581,9 +582,6 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                                <connections>
-                                                                    <binding destination="aUz-mS-5d7" name="value" keyPath="arrangedObjects.address" id="0LF-ot-dYo"/>
-                                                                </connections>
                                                             </tableColumn>
                                                             <tableColumn width="100" minWidth="40" maxWidth="1000" id="Y1B-qy-1n9">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Latitude">
@@ -597,9 +595,6 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                                <connections>
-                                                                    <binding destination="aUz-mS-5d7" name="value" keyPath="arrangedObjects.latitude" id="gIP-Im-ucI"/>
-                                                                </connections>
                                                             </tableColumn>
                                                             <tableColumn width="100" minWidth="10" maxWidth="3.4028234663852886e+38" id="2Iy-vG-eku">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Longitude">
@@ -613,9 +608,6 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                                <connections>
-                                                                    <binding destination="aUz-mS-5d7" name="value" keyPath="arrangedObjects.longitude" id="kJd-yH-lZ3"/>
-                                                                </connections>
                                                             </tableColumn>
                                                         </tableColumns>
                                                     </tableView>
@@ -668,9 +660,6 @@
                                                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                             </textFieldCell>
                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                                            <connections>
-                                                                                <binding destination="Ur9-Au-0QN" name="value" keyPath="arrangedObjects.applicationPermitNumber" id="Xm7-ec-UYA"/>
-                                                                            </connections>
                                                                         </tableColumn>
                                                                         <tableColumn width="145" minWidth="40" maxWidth="1000" id="Zh8-rU-nCe">
                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Applicant">
@@ -684,9 +673,6 @@
                                                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                             </textFieldCell>
                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                                            <connections>
-                                                                                <binding destination="Ur9-Au-0QN" name="value" keyPath="arrangedObjects.applicantName" id="AHN-Oo-Cfv"/>
-                                                                            </connections>
                                                                         </tableColumn>
                                                                         <tableColumn width="110" minWidth="10" maxWidth="3.4028234663852886e+38" id="M8o-Qa-BWz">
                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Application Date">
@@ -700,9 +686,6 @@
                                                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                             </textFieldCell>
                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                                            <connections>
-                                                                                <binding destination="Ur9-Au-0QN" name="value" keyPath="arrangedObjects.applicationDate" id="Ypt-zi-dMK"/>
-                                                                            </connections>
                                                                         </tableColumn>
                                                                         <tableColumn width="110" minWidth="10" maxWidth="3.4028234663852886e+38" id="89e-Tg-pPd">
                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Status">
@@ -716,9 +699,6 @@
                                                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                             </textFieldCell>
                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                                            <connections>
-                                                                                <binding destination="Ur9-Au-0QN" name="value" keyPath="arrangedObjects.status" id="Wvx-Pa-Zvm"/>
-                                                                            </connections>
                                                                         </tableColumn>
                                                                         <tableColumn width="110" minWidth="10" maxWidth="3.4028234663852886e+38" id="Xhe-VL-v4J">
                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Value">
@@ -732,9 +712,6 @@
                                                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                             </textFieldCell>
                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                                            <connections>
-                                                                                <binding destination="Ur9-Au-0QN" name="value" keyPath="arrangedObjects.value" id="YcV-kn-xQO"/>
-                                                                            </connections>
                                                                         </tableColumn>
                                                                     </tableColumns>
                                                                 </tableView>
@@ -766,9 +743,6 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
-                                            <connections>
-                                                <action selector="add:" target="aUz-mS-5d7" id="hGG-ob-Aws"/>
-                                            </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6a3-q3-D2u">
                                             <rect key="frame" x="70" y="237" width="48" height="32"/>
@@ -777,9 +751,6 @@
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
-                                            <connections>
-                                                <action selector="remove:" target="aUz-mS-5d7" id="Z4C-XT-DWi"/>
-                                            </connections>
                                         </button>
                                     </subviews>
                                 </view>
@@ -815,9 +786,6 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                                <connections>
-                                                                    <binding destination="gvH-Vu-rDo" name="value" keyPath="arrangedObjects.name" id="aNE-V1-6Jl"/>
-                                                                </connections>
                                                             </tableColumn>
                                                             <tableColumn width="422" minWidth="40" maxWidth="1000" id="VSx-IK-y3T">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Application Count">
@@ -831,9 +799,6 @@
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                                <connections>
-                                                                    <binding destination="gvH-Vu-rDo" name="value" keyPath="arrangedObjects.@count.applications" id="cxM-jU-NAD"/>
-                                                                </connections>
                                                             </tableColumn>
                                                         </tableColumns>
                                                     </tableView>
@@ -902,9 +867,6 @@
                                                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                             </textFieldCell>
                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                                            <connections>
-                                                                                <binding destination="ivd-kf-MBE" name="value" keyPath="arrangedObjects.applicationPermitNumber" id="Otc-Sq-hFb"/>
-                                                                            </connections>
                                                                         </tableColumn>
                                                                         <tableColumn width="145" minWidth="40" maxWidth="1000" id="8Qy-bX-gR9">
                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Applicant">
@@ -918,9 +880,6 @@
                                                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                             </textFieldCell>
                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                                            <connections>
-                                                                                <binding destination="ivd-kf-MBE" name="value" keyPath="arrangedObjects.address" id="ubb-MV-t8s"/>
-                                                                            </connections>
                                                                         </tableColumn>
                                                                         <tableColumn width="110" minWidth="10" maxWidth="3.4028234663852886e+38" id="gtG-07-h6R">
                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Application Date">
@@ -934,9 +893,6 @@
                                                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                             </textFieldCell>
                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                                            <connections>
-                                                                                <binding destination="ivd-kf-MBE" name="value" keyPath="arrangedObjects.applicationDate" id="TEY-IX-Qgh"/>
-                                                                            </connections>
                                                                         </tableColumn>
                                                                         <tableColumn width="110" minWidth="10" maxWidth="3.4028234663852886e+38" id="qMq-HE-ifb">
                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Status">
@@ -950,9 +906,6 @@
                                                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                             </textFieldCell>
                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                                            <connections>
-                                                                                <binding destination="ivd-kf-MBE" name="value" keyPath="arrangedObjects.status" id="wrE-Ez-QOY"/>
-                                                                            </connections>
                                                                         </tableColumn>
                                                                         <tableColumn width="110" minWidth="10" maxWidth="3.4028234663852886e+38" id="ZO9-dU-cgo">
                                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Value">
@@ -966,9 +919,6 @@
                                                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                             </textFieldCell>
                                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
-                                                                            <connections>
-                                                                                <binding destination="ivd-kf-MBE" name="value" keyPath="arrangedObjects.value" id="xMd-1Q-YfF"/>
-                                                                            </connections>
                                                                         </tableColumn>
                                                                     </tableColumns>
                                                                 </tableView>
@@ -1034,39 +984,19 @@
             </connections>
         </window>
         <customObject id="-3" userLabel="Application"/>
-        <arrayController mode="entity" entityName="Application" automaticallyPreparesContent="YES" id="Auj-mx-vek" userLabel="Application Array Controller">
+        <arrayController mode="entity" entityName="Application" automaticallyPreparesContent="YES" id="qFZ-2K-L4N" userLabel="Applications Array Controller">
             <connections>
-                <binding destination="-2" name="managedObjectContext" keyPath="self.managedObjectContext" id="dJi-jZ-Weu"/>
+                <binding destination="-2" name="managedObjectContext" keyPath="self.managedObjectContext" id="VUx-IB-Ed0"/>
             </connections>
         </arrayController>
-        <arrayController mode="entity" entityName="Property" automaticallyPreparesContent="YES" id="GnQ-N5-KHm" userLabel="Application Property Array Controller">
+        <arrayController mode="entity" entityName="Property" automaticallyPreparesContent="YES" id="4I7-7P-Uyo" userLabel="Applications Property Array Controller">
             <connections>
-                <binding destination="-2" name="managedObjectContext" keyPath="self.managedObjectContext" id="Xtl-BF-6Ip"/>
+                <binding destination="-2" name="managedObjectContext" keyPath="self.managedObjectContext" id="Ytb-Ac-z7H"/>
             </connections>
         </arrayController>
-        <arrayController mode="entity" entityName="Applicant" automaticallyPreparesContent="YES" id="Nrf-cL-1uG" userLabel="Application Applicants Array Controller">
+        <arrayController mode="entity" entityName="Applicant" automaticallyPreparesContent="YES" id="Ity-OF-W8T" userLabel="Applications Applicant Array Controller">
             <connections>
-                <binding destination="-2" name="managedObjectContext" keyPath="self.managedObjectContext" id="jQb-Kx-6tL"/>
-            </connections>
-        </arrayController>
-        <arrayController mode="entity" entityName="Applicant" automaticallyPreparesContent="YES" id="gvH-Vu-rDo" userLabel="Applicant Array Controller">
-            <connections>
-                <binding destination="-2" name="managedObjectContext" keyPath="self.managedObjectContext" id="cJv-o8-Pdf"/>
-            </connections>
-        </arrayController>
-        <arrayController mode="entity" entityName="Application" automaticallyPreparesContent="YES" id="ivd-kf-MBE" userLabel="Applicants Applications Array Controller">
-            <connections>
-                <binding destination="gvH-Vu-rDo" name="managedObjectContext" keyPath="selection.applications" id="szr-yB-dDu"/>
-            </connections>
-        </arrayController>
-        <arrayController mode="entity" entityName="Property" automaticallyPreparesContent="YES" id="aUz-mS-5d7" userLabel="Property Array Controller">
-            <connections>
-                <binding destination="-2" name="managedObjectContext" keyPath="self.managedObjectContext" id="xcJ-za-1QC"/>
-            </connections>
-        </arrayController>
-        <arrayController mode="entity" entityName="Application" automaticallyPreparesContent="YES" id="Ur9-Au-0QN" userLabel="Property Application Array Controller">
-            <connections>
-                <binding destination="aUz-mS-5d7" name="managedObjectContext" keyPath="selection.applications" id="sGg-JF-gIH"/>
+                <binding destination="-2" name="managedObjectContext" keyPath="self.managedObjectContext" id="P3I-GL-Ge1"/>
             </connections>
         </arrayController>
     </objects>
