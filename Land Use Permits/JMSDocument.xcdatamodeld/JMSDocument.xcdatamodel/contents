@@ -1,4 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="untitled.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5029" systemVersion="13A603" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Applicant" representedClassName="Applicant" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="application" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Application" inverseName="applicants" inverseEntity="Application" syncable="YES"/>
+    </entity>
+    <entity name="Application" representedClassName="Application" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="appealed" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="applicantName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="applicationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="applicationDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="applicationPermitNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="category" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="contractor" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="decisionDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="decisionType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="designReviewIncluded" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="permitType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="statusURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="value" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="applicants" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Applicant" inverseName="application" inverseEntity="Applicant" syncable="YES"/>
+        <relationship name="properties" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Property" inverseName="applications" inverseEntity="Property" syncable="YES"/>
+    </entity>
+    <entity name="Property" representedClassName="Property" syncable="YES">
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="applications" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Application" inverseName="properties" inverseEntity="Application" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Application" positionX="-56" positionY="-352" width="128" height="328"/>
+        <element name="Applicant" positionX="169" positionY="-40" width="128" height="73"/>
+        <element name="Property" positionX="-279" positionY="-54" width="128" height="103"/>
+    </elements>
 </model>

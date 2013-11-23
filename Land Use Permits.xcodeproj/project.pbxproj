@@ -20,6 +20,9 @@
 		93D560E118404ABF00933529 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D560BA18404ABE00933529 /* Cocoa.framework */; };
 		93D560E918404ABF00933529 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93D560E718404ABF00933529 /* InfoPlist.strings */; };
 		93D560EB18404ABF00933529 /* Land_Use_PermitsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D560EA18404ABF00933529 /* Land_Use_PermitsTests.m */; };
+		93D560F618404F8400933529 /* Applicant.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D560F518404F8400933529 /* Applicant.m */; };
+		93D560F918404F8500933529 /* Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D560F818404F8500933529 /* Property.m */; };
+		93D560FC18404F8500933529 /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D560FB18404F8500933529 /* Application.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,12 @@
 		93D560E618404ABF00933529 /* Land Use PermitsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Land Use PermitsTests-Info.plist"; sourceTree = "<group>"; };
 		93D560E818404ABF00933529 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		93D560EA18404ABF00933529 /* Land_Use_PermitsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Land_Use_PermitsTests.m; sourceTree = "<group>"; };
+		93D560F418404F8400933529 /* Applicant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Applicant.h; path = Model/Applicant.h; sourceTree = "<group>"; };
+		93D560F518404F8400933529 /* Applicant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Applicant.m; path = Model/Applicant.m; sourceTree = "<group>"; };
+		93D560F718404F8500933529 /* Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Property.h; path = Model/Property.h; sourceTree = "<group>"; };
+		93D560F818404F8500933529 /* Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Property.m; path = Model/Property.m; sourceTree = "<group>"; };
+		93D560FA18404F8500933529 /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Application.h; path = Model/Application.h; sourceTree = "<group>"; };
+		93D560FB18404F8500933529 /* Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Application.m; path = Model/Application.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,12 +128,12 @@
 		93D560C018404ABF00933529 /* Land Use Permits */ = {
 			isa = PBXGroup;
 			children = (
+				93D560FD18404F8A00933529 /* Model */,
 				93D560CC18404ABF00933529 /* JMSDocument.h */,
 				93D560CD18404ABF00933529 /* JMSDocument.m */,
 				93D560CF18404ABF00933529 /* JMSDocument.xib */,
 				93D560D218404ABF00933529 /* MainMenu.xib */,
 				93D560D818404ABF00933529 /* Images.xcassets */,
-				93D560D518404ABF00933529 /* JMSDocument.xcdatamodeld */,
 				93D560C118404ABF00933529 /* Supporting Files */,
 			);
 			path = "Land Use Permits";
@@ -158,6 +167,20 @@
 				93D560E718404ABF00933529 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93D560FD18404F8A00933529 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				93D560D518404ABF00933529 /* JMSDocument.xcdatamodeld */,
+				93D560FA18404F8500933529 /* Application.h */,
+				93D560FB18404F8500933529 /* Application.m */,
+				93D560F718404F8500933529 /* Property.h */,
+				93D560F818404F8500933529 /* Property.m */,
+				93D560F418404F8400933529 /* Applicant.h */,
+				93D560F518404F8400933529 /* Applicant.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93D560FC18404F8500933529 /* Application.m in Sources */,
+				93D560F918404F8500933529 /* Property.m in Sources */,
 				93D560D718404ABF00933529 /* JMSDocument.xcdatamodeld in Sources */,
 				93D560C718404ABF00933529 /* main.m in Sources */,
+				93D560F618404F8400933529 /* Applicant.m in Sources */,
 				93D560CE18404ABF00933529 /* JMSDocument.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
