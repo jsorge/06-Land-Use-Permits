@@ -34,6 +34,7 @@ NSString *dataModelExtension = @"momd";
     //If fetch fails then create the object
     if (!property) {
         property = [NSEntityDescription insertNewObjectForEntityForName:propertyEntityName inManagedObjectContext:context];
+        property.address = address;
     }
     return property;
 }

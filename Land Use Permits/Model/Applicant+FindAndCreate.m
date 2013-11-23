@@ -32,6 +32,7 @@ NSString *const applicantEntityName = @"Applicant";
     
     if (!applicant) {
         applicant = [NSEntityDescription insertNewObjectForEntityForName:applicantEntityName inManagedObjectContext:context];
+        applicant.name = name;
     }
     
     return applicant;
