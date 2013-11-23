@@ -1,0 +1,509 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		93D560BB18404ABE00933529 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D560BA18404ABE00933529 /* Cocoa.framework */; };
+		93D560C518404ABF00933529 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93D560C318404ABF00933529 /* InfoPlist.strings */; };
+		93D560C718404ABF00933529 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D560C618404ABF00933529 /* main.m */; };
+		93D560CB18404ABF00933529 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 93D560C918404ABF00933529 /* Credits.rtf */; };
+		93D560CE18404ABF00933529 /* JMSDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D560CD18404ABF00933529 /* JMSDocument.m */; };
+		93D560D118404ABF00933529 /* JMSDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93D560CF18404ABF00933529 /* JMSDocument.xib */; };
+		93D560D418404ABF00933529 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93D560D218404ABF00933529 /* MainMenu.xib */; };
+		93D560D718404ABF00933529 /* JMSDocument.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93D560D518404ABF00933529 /* JMSDocument.xcdatamodeld */; };
+		93D560D918404ABF00933529 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93D560D818404ABF00933529 /* Images.xcassets */; };
+		93D560E018404ABF00933529 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D560DF18404ABF00933529 /* XCTest.framework */; };
+		93D560E118404ABF00933529 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D560BA18404ABE00933529 /* Cocoa.framework */; };
+		93D560E918404ABF00933529 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93D560E718404ABF00933529 /* InfoPlist.strings */; };
+		93D560EB18404ABF00933529 /* Land_Use_PermitsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D560EA18404ABF00933529 /* Land_Use_PermitsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		93D560E218404ABF00933529 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 93D560AF18404ABE00933529 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 93D560B618404ABE00933529;
+			remoteInfo = "Land Use Permits";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		93D560B718404ABE00933529 /* Land Use Permits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Land Use Permits.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93D560BA18404ABE00933529 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		93D560BD18404ABF00933529 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		93D560BE18404ABF00933529 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		93D560BF18404ABF00933529 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		93D560C218404ABF00933529 /* Land Use Permits-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Land Use Permits-Info.plist"; sourceTree = "<group>"; };
+		93D560C418404ABF00933529 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		93D560C618404ABF00933529 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93D560C818404ABF00933529 /* Land Use Permits-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Land Use Permits-Prefix.pch"; sourceTree = "<group>"; };
+		93D560CA18404ABF00933529 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		93D560CC18404ABF00933529 /* JMSDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JMSDocument.h; sourceTree = "<group>"; };
+		93D560CD18404ABF00933529 /* JMSDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JMSDocument.m; sourceTree = "<group>"; };
+		93D560D018404ABF00933529 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/JMSDocument.xib; sourceTree = "<group>"; };
+		93D560D318404ABF00933529 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		93D560D618404ABF00933529 /* JMSDocument.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = JMSDocument.xcdatamodel; sourceTree = "<group>"; };
+		93D560D818404ABF00933529 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		93D560DE18404ABF00933529 /* Land Use PermitsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Land Use PermitsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93D560DF18404ABF00933529 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		93D560E618404ABF00933529 /* Land Use PermitsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Land Use PermitsTests-Info.plist"; sourceTree = "<group>"; };
+		93D560E818404ABF00933529 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		93D560EA18404ABF00933529 /* Land_Use_PermitsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Land_Use_PermitsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		93D560B418404ABE00933529 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D560BB18404ABE00933529 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93D560DB18404ABF00933529 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D560E118404ABF00933529 /* Cocoa.framework in Frameworks */,
+				93D560E018404ABF00933529 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		93D560AE18404ABE00933529 = {
+			isa = PBXGroup;
+			children = (
+				93D560C018404ABF00933529 /* Land Use Permits */,
+				93D560E418404ABF00933529 /* Land Use PermitsTests */,
+				93D560B918404ABE00933529 /* Frameworks */,
+				93D560B818404ABE00933529 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		93D560B818404ABE00933529 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93D560B718404ABE00933529 /* Land Use Permits.app */,
+				93D560DE18404ABF00933529 /* Land Use PermitsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		93D560B918404ABE00933529 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93D560BA18404ABE00933529 /* Cocoa.framework */,
+				93D560DF18404ABF00933529 /* XCTest.framework */,
+				93D560BC18404ABF00933529 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93D560BC18404ABF00933529 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93D560BD18404ABF00933529 /* AppKit.framework */,
+				93D560BE18404ABF00933529 /* CoreData.framework */,
+				93D560BF18404ABF00933529 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		93D560C018404ABF00933529 /* Land Use Permits */ = {
+			isa = PBXGroup;
+			children = (
+				93D560CC18404ABF00933529 /* JMSDocument.h */,
+				93D560CD18404ABF00933529 /* JMSDocument.m */,
+				93D560CF18404ABF00933529 /* JMSDocument.xib */,
+				93D560D218404ABF00933529 /* MainMenu.xib */,
+				93D560D818404ABF00933529 /* Images.xcassets */,
+				93D560D518404ABF00933529 /* JMSDocument.xcdatamodeld */,
+				93D560C118404ABF00933529 /* Supporting Files */,
+			);
+			path = "Land Use Permits";
+			sourceTree = "<group>";
+		};
+		93D560C118404ABF00933529 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93D560C218404ABF00933529 /* Land Use Permits-Info.plist */,
+				93D560C318404ABF00933529 /* InfoPlist.strings */,
+				93D560C618404ABF00933529 /* main.m */,
+				93D560C818404ABF00933529 /* Land Use Permits-Prefix.pch */,
+				93D560C918404ABF00933529 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93D560E418404ABF00933529 /* Land Use PermitsTests */ = {
+			isa = PBXGroup;
+			children = (
+				93D560EA18404ABF00933529 /* Land_Use_PermitsTests.m */,
+				93D560E518404ABF00933529 /* Supporting Files */,
+			);
+			path = "Land Use PermitsTests";
+			sourceTree = "<group>";
+		};
+		93D560E518404ABF00933529 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93D560E618404ABF00933529 /* Land Use PermitsTests-Info.plist */,
+				93D560E718404ABF00933529 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		93D560B618404ABE00933529 /* Land Use Permits */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93D560EE18404ABF00933529 /* Build configuration list for PBXNativeTarget "Land Use Permits" */;
+			buildPhases = (
+				93D560B318404ABE00933529 /* Sources */,
+				93D560B418404ABE00933529 /* Frameworks */,
+				93D560B518404ABE00933529 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Land Use Permits";
+			productName = "Land Use Permits";
+			productReference = 93D560B718404ABE00933529 /* Land Use Permits.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93D560DD18404ABF00933529 /* Land Use PermitsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93D560F118404ABF00933529 /* Build configuration list for PBXNativeTarget "Land Use PermitsTests" */;
+			buildPhases = (
+				93D560DA18404ABF00933529 /* Sources */,
+				93D560DB18404ABF00933529 /* Frameworks */,
+				93D560DC18404ABF00933529 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93D560E318404ABF00933529 /* PBXTargetDependency */,
+			);
+			name = "Land Use PermitsTests";
+			productName = "Land Use PermitsTests";
+			productReference = 93D560DE18404ABF00933529 /* Land Use PermitsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		93D560AF18404ABE00933529 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JMS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = jsorge;
+				TargetAttributes = {
+					93D560DD18404ABF00933529 = {
+						TestTargetID = 93D560B618404ABE00933529;
+					};
+				};
+			};
+			buildConfigurationList = 93D560B218404ABE00933529 /* Build configuration list for PBXProject "Land Use Permits" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 93D560AE18404ABE00933529;
+			productRefGroup = 93D560B818404ABE00933529 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				93D560B618404ABE00933529 /* Land Use Permits */,
+				93D560DD18404ABF00933529 /* Land Use PermitsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93D560B518404ABE00933529 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D560C518404ABF00933529 /* InfoPlist.strings in Resources */,
+				93D560D918404ABF00933529 /* Images.xcassets in Resources */,
+				93D560D118404ABF00933529 /* JMSDocument.xib in Resources */,
+				93D560CB18404ABF00933529 /* Credits.rtf in Resources */,
+				93D560D418404ABF00933529 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93D560DC18404ABF00933529 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D560E918404ABF00933529 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		93D560B318404ABE00933529 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D560D718404ABF00933529 /* JMSDocument.xcdatamodeld in Sources */,
+				93D560C718404ABF00933529 /* main.m in Sources */,
+				93D560CE18404ABF00933529 /* JMSDocument.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93D560DA18404ABF00933529 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93D560EB18404ABF00933529 /* Land_Use_PermitsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93D560E318404ABF00933529 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 93D560B618404ABE00933529 /* Land Use Permits */;
+			targetProxy = 93D560E218404ABF00933529 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		93D560C318404ABF00933529 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93D560C418404ABF00933529 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		93D560C918404ABF00933529 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93D560CA18404ABF00933529 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		93D560CF18404ABF00933529 /* JMSDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93D560D018404ABF00933529 /* Base */,
+			);
+			name = JMSDocument.xib;
+			sourceTree = "<group>";
+		};
+		93D560D218404ABF00933529 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93D560D318404ABF00933529 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		93D560E718404ABF00933529 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93D560E818404ABF00933529 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		93D560EC18404ABF00933529 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		93D560ED18404ABF00933529 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		93D560EF18404ABF00933529 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Land Use Permits/Land Use Permits-Prefix.pch";
+				INFOPLIST_FILE = "Land Use Permits/Land Use Permits-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		93D560F018404ABF00933529 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Land Use Permits/Land Use Permits-Prefix.pch";
+				INFOPLIST_FILE = "Land Use Permits/Land Use Permits-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		93D560F218404ABF00933529 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Land Use Permits.app/Contents/MacOS/Land Use Permits";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Land Use Permits/Land Use Permits-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Land Use PermitsTests/Land Use PermitsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		93D560F318404ABF00933529 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Land Use Permits.app/Contents/MacOS/Land Use Permits";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Land Use Permits/Land Use Permits-Prefix.pch";
+				INFOPLIST_FILE = "Land Use PermitsTests/Land Use PermitsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		93D560B218404ABE00933529 /* Build configuration list for PBXProject "Land Use Permits" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93D560EC18404ABF00933529 /* Debug */,
+				93D560ED18404ABF00933529 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93D560EE18404ABF00933529 /* Build configuration list for PBXNativeTarget "Land Use Permits" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93D560EF18404ABF00933529 /* Debug */,
+				93D560F018404ABF00933529 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		93D560F118404ABF00933529 /* Build configuration list for PBXNativeTarget "Land Use PermitsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				93D560F218404ABF00933529 /* Debug */,
+				93D560F318404ABF00933529 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		93D560D518404ABF00933529 /* JMSDocument.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				93D560D618404ABF00933529 /* JMSDocument.xcdatamodel */,
+			);
+			currentVersion = 93D560D618404ABF00933529 /* JMSDocument.xcdatamodel */;
+			path = JMSDocument.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 93D560AF18404ABE00933529 /* Project object */;
+}
