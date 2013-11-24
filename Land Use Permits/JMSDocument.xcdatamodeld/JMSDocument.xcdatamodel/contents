@@ -5,9 +5,7 @@
         <relationship name="applications" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Application" inverseName="applicant" inverseEntity="Application" syncable="YES"/>
     </entity>
     <entity name="Application" representedClassName="Application" syncable="YES">
-        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="appealed" optional="YES" attributeType="Boolean" syncable="YES"/>
-        <attribute name="applicantName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="applicationDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="applicationDescription" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="applicationPermitNumber" optional="YES" attributeType="String" syncable="YES"/>
@@ -36,7 +34,7 @@
     <fetchRequest name="FetchPropertyByAddress" entity="Property" predicateString="address == &quot;$address&quot;"/>
     <elements>
         <element name="Applicant" positionX="169" positionY="-40" width="128" height="73"/>
-        <element name="Application" positionX="-56" positionY="-352" width="128" height="328"/>
+        <element name="Application" positionX="-56" positionY="-352" width="128" height="298"/>
         <element name="Property" positionX="-279" positionY="-54" width="128" height="103"/>
     </elements>
 </model>

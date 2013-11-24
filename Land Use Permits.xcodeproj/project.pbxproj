@@ -25,7 +25,7 @@
 		93D560EB18404ABF00933529 /* Land_Use_PermitsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D560EA18404ABF00933529 /* Land_Use_PermitsTests.m */; };
 		93DEB4BA184163CD00C8A080 /* Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DEB4B9184163CD00C8A080 /* Property.m */; };
 		93DEB4BD184163CD00C8A080 /* Applicant.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DEB4BC184163CD00C8A080 /* Applicant.m */; };
-		93DEB4C0184163CD00C8A080 /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DEB4BF184163CD00C8A080 /* Application.m */; };
+		93DEB4C318417EA200C8A080 /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DEB4C218417EA200C8A080 /* Application.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +70,8 @@
 		93DEB4B9184163CD00C8A080 /* Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Property.m; path = Model/Property.m; sourceTree = "<group>"; };
 		93DEB4BB184163CD00C8A080 /* Applicant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Applicant.h; path = Model/Applicant.h; sourceTree = "<group>"; };
 		93DEB4BC184163CD00C8A080 /* Applicant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Applicant.m; path = Model/Applicant.m; sourceTree = "<group>"; };
-		93DEB4BE184163CD00C8A080 /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Application.h; path = Model/Application.h; sourceTree = "<group>"; };
-		93DEB4BF184163CD00C8A080 /* Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Application.m; path = Model/Application.m; sourceTree = "<group>"; };
+		93DEB4C118417EA200C8A080 /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Application.h; path = Model/Application.h; sourceTree = "<group>"; };
+		93DEB4C218417EA200C8A080 /* Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Application.m; path = Model/Application.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,8 +182,8 @@
 			isa = PBXGroup;
 			children = (
 				93D560D518404ABF00933529 /* JMSDocument.xcdatamodeld */,
-				93DEB4BE184163CD00C8A080 /* Application.h */,
-				93DEB4BF184163CD00C8A080 /* Application.m */,
+				93DEB4C118417EA200C8A080 /* Application.h */,
+				93DEB4C218417EA200C8A080 /* Application.m */,
 				93DEB4BB184163CD00C8A080 /* Applicant.h */,
 				93DEB4BC184163CD00C8A080 /* Applicant.m */,
 				93DEB4B8184163CD00C8A080 /* Property.h */,
@@ -298,7 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93DEB4C0184163CD00C8A080 /* Application.m in Sources */,
+				93DEB4C318417EA200C8A080 /* Application.m in Sources */,
 				93D560D718404ABF00933529 /* JMSDocument.xcdatamodeld in Sources */,
 				93AEF5D3184057330064D1F4 /* Applicant+FindAndCreate.m in Sources */,
 				93DEB4BD184163CD00C8A080 /* Applicant.m in Sources */,
