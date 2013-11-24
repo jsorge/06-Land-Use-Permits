@@ -13,9 +13,7 @@
 
 @implementation Application
 
-@dynamic address;
 @dynamic appealed;
-@dynamic applicantName;
 @dynamic applicationDate;
 @dynamic applicationDescription;
 @dynamic applicationPermitNumber;

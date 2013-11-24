@@ -13,9 +13,7 @@
 
 @interface Application : NSManagedObject
 
-@property (nonatomic, retain) NSString * address;
 @property (nonatomic, retain) NSNumber * appealed;
-@property (nonatomic, retain) NSString * applicantName;
 @property (nonatomic, retain) NSDate * applicationDate;
 @property (nonatomic, retain) NSString * applicationDescription;
 @property (nonatomic, retain) NSString * applicationPermitNumber;
