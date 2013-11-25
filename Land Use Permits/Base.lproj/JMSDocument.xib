@@ -6,6 +6,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="JMSDocument">
             <connections>
+                <outlet property="searchField" destination="fbw-ew-lya" id="RW9-zz-u7O"/>
                 <outlet property="window" destination="5" id="18"/>
             </connections>
         </customObject>

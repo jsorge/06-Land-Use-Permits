@@ -10,6 +10,8 @@
 
 @interface JMSDocument : NSPersistentDocument
 
+@property (weak) IBOutlet NSSearchField *searchField;
+
 - (IBAction)insertFakeData:(id)sender;
 
 @end
