@@ -10,7 +10,7 @@
 #import "Property+FindAndCreate.h"
 
 NSString *const fetchApplicantByName = @"FetchApplicantByName";
-NSString *const applicantNameToken = @"$name";
+NSString *const applicantNameToken = @"NAME";
 NSString *const applicantEntityName = @"Applicant";
 
 @implementation Applicant (FindAndCreate)
@@ -49,8 +49,7 @@ NSString *const applicantEntityName = @"Applicant";
 + (NSArray *)findApplicantsWithName:(NSString *)name context:(NSManagedObjectContext *)context
 {
     NSError *error;
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:dataModelName withExtension:dataModelExtension];
-    NSManagedObjectModel *model = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+    NSManagedObjectModel *model = context.persistentStoreCoordinator.managedObjectModel;
     
     NSFetchRequest *fetch = [model fetchRequestFromTemplateWithName:fetchApplicantByName substitutionVariables:@{applicantNameToken: name}];
     NSArray *fetchResult = [context executeFetchRequest:fetch error:&error];

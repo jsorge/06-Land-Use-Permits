@@ -10,7 +10,7 @@
 #import "Property+FindAndCreate.h"
 
 NSString *const fetchApplicationByPermitNumber = @"FetchApplicationByPermitNumber";
-NSString *const applicationPermitToken = @"$permitNumber";
+NSString *const applicationPermitToken = @"PERMIT_NUMBER";
 NSString *const applicationEntityName = @"Application";
 
 @implementation Application (FindAndCreate)
@@ -48,8 +48,7 @@ NSString *const applicationEntityName = @"Application";
 + (NSArray *)applicationsWithPermitNumber:(NSString *)permitNumber context:(NSManagedObjectContext *)context
 {
     NSError *error;
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:dataModelName withExtension:dataModelExtension];
-    NSManagedObjectModel *model = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+    NSManagedObjectModel *model = context.persistentStoreCoordinator.managedObjectModel;
     
     NSFetchRequest *fetch = [model fetchRequestFromTemplateWithName:fetchApplicationByPermitNumber substitutionVariables:@{applicationPermitToken: permitNumber}];
     NSArray *fetchResult = [context executeFetchRequest:fetch error:&error];

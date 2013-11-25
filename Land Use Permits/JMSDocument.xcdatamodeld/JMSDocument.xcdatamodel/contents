@@ -29,9 +29,9 @@
         <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
         <relationship name="applications" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Application" inverseName="property" inverseEntity="Application" syncable="YES"/>
     </entity>
-    <fetchRequest name="FetchApplicantByName" entity="Applicant" predicateString="name CONTAINS &quot;$name&quot;"/>
-    <fetchRequest name="FetchApplicationByPermitNumber" entity="Application" predicateString="applicationPermitNumber == &quot;$permitNumber&quot;"/>
-    <fetchRequest name="FetchPropertyByAddress" entity="Property" predicateString="address == &quot;$address&quot;"/>
+    <fetchRequest name="FetchApplicantByName" entity="Applicant" predicateString="name == $NAME"/>
+    <fetchRequest name="FetchApplicationByPermitNumber" entity="Application" predicateString="applicationPermitNumber == $PERMIT_NUMBER"/>
+    <fetchRequest name="FetchPropertyByAddress" entity="Property" predicateString="address == $ADDRESS"/>
     <elements>
         <element name="Applicant" positionX="169" positionY="-40" width="128" height="73"/>
         <element name="Application" positionX="-56" positionY="-352" width="128" height="298"/>

@@ -10,9 +10,6 @@
 
 @interface Property (FindAndCreate)
 
-extern NSString *dataModelName;
-extern NSString *dataModelExtension;
-
 + (Property *)findOrCreatePropertyWithAddress:(NSString *)address context:(NSManagedObjectContext *)context;
 + (NSArray *)findPropertiesWithAddress:(NSString *)address context:(NSManagedObjectContext *)context;
 
