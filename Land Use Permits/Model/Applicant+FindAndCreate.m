@@ -16,15 +16,6 @@ NSString *const applicantEntityName = @"Applicant";
 @implementation Applicant (FindAndCreate)
 
 #pragma mark - API
-
-/**
- *  Returns the applicant based on the name search
- *
- *  @param name    Applicant's name
- *  @param context Managed Object Context
- *
- *  @return Applicant
- */
 + (Applicant *)findOrCreateApplicantWithName:(NSString *)name context:(NSManagedObjectContext *)context
 {
     NSArray *applicants = [self findApplicantsWithName:name context:context];
@@ -38,20 +29,13 @@ NSString *const applicantEntityName = @"Applicant";
     return applicant;
 }
 
-/**
- *  Finds all applicants with a given name
- *
- *  @param name    Applicant's name
- *  @param context Managed Object Context
- *
- *  @return An array of applicants
- */
 + (NSArray *)findApplicantsWithName:(NSString *)name context:(NSManagedObjectContext *)context
 {
     NSError *error;
     NSManagedObjectModel *model = context.persistentStoreCoordinator.managedObjectModel;
     
-    NSFetchRequest *fetch = [model fetchRequestFromTemplateWithName:fetchApplicantByName substitutionVariables:@{applicantNameToken: name}];
+    NSFetchRequest *fetch = [model fetchRequestFromTemplateWithName:fetchApplicantByName
+                                              substitutionVariables:@{applicantNameToken: name}];
     NSArray *fetchResult = [context executeFetchRequest:fetch error:&error];
     
     return fetchResult;

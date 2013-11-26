@@ -16,14 +16,7 @@ NSString *const propertyEntityName = @"Property";
 
 #pragma mark - Public API
 
-/**
- *  Returns a property either created or fetched givn its address
- *
- *  @param address Property Address
- *  @param context Managed Object Context
- *
- *  @return Property
- */
+
 + (Property *)findOrCreatePropertyWithAddress:(NSString *)address context:(NSManagedObjectContext *)context
 {
     NSArray *properties = [self findPropertiesWithAddress:address context:context];
@@ -37,14 +30,6 @@ NSString *const propertyEntityName = @"Property";
     return property;
 }
 
-/**
- *  Finds all properties by a given address
- *
- *  @param address Property Address
- *  @param context Managed Object Context
- *
- *  @return Array of Properties
- */
 + (NSArray *)findPropertiesWithAddress:(NSString *)address context:(NSManagedObjectContext *)context
 {
     NSError *error;
