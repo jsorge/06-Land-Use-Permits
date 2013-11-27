@@ -39,13 +39,13 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" autosaveColumns="NO" headerView="Wtl-K5-nDr" id="OoR-YV-eH0">
-                                                        <rect key="frame" x="0.0" y="0.0" width="1326" height="209"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="1526" height="209"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <size key="intercellSpacing" width="3" height="2"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                         <tableColumns>
-                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="ZYX-tt-sKl">
+                                                            <tableColumn width="100" minWidth="10" maxWidth="3.4028234663852886e+38" id="ZYX-tt-sKl">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Permit #">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -61,7 +61,7 @@
                                                                     <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.applicationPermitNumber" id="Wgh-Li-V3T"/>
                                                                 </connections>
                                                             </tableColumn>
-                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="C8p-0s-Fu6">
+                                                            <tableColumn width="125" minWidth="10" maxWidth="3.4028234663852886e+38" id="C8p-0s-Fu6">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Address">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -93,7 +93,7 @@
                                                                     <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.appealed" id="Ccr-Sm-A70"/>
                                                                 </connections>
                                                             </tableColumn>
-                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="mjJ-34-f3r">
+                                                            <tableColumn width="125" minWidth="10" maxWidth="3.4028234663852886e+38" id="mjJ-34-f3r">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Name">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -141,7 +141,7 @@
                                                                     <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.applicationDescription" id="SvY-Ew-wbI"/>
                                                                 </connections>
                                                             </tableColumn>
-                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="tJE-0R-9Kb">
+                                                            <tableColumn width="100" minWidth="10" maxWidth="3.4028234663852886e+38" id="tJE-0R-9Kb">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Category">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -157,7 +157,7 @@
                                                                     <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.category" id="67H-AG-wgH"/>
                                                                 </connections>
                                                             </tableColumn>
-                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="vJZ-ce-Qi8">
+                                                            <tableColumn width="125" minWidth="10" maxWidth="3.4028234663852886e+38" id="vJZ-ce-Qi8">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Contractor">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -331,7 +331,7 @@
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                             <tableHeaderView key="headerView" id="Wtl-K5-nDr">
-                                                <rect key="frame" x="0.0" y="0.0" width="1326" height="17"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="1526" height="17"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </tableHeaderView>
                                         </scrollView>
