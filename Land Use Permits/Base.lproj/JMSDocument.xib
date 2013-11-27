@@ -700,11 +700,11 @@
                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </clipView>
                                             <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="RzT-tK-8hP">
-                                                <rect key="frame" x="1" y="1" width="0.0" height="16"/>
+                                                <rect key="frame" x="1" y="1" width="196" height="16"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                             <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="Ihc-fT-z8m">
-                                                <rect key="frame" x="-15" y="17" width="16" height="0.0"/>
+                                                <rect key="frame" x="181" y="17" width="16" height="0.0"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                             <tableHeaderView key="headerView" id="PL4-xV-SyA">
@@ -819,11 +819,11 @@
                                                             <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         </clipView>
                                                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="UAt-BI-Tu5">
-                                                            <rect key="frame" x="1" y="1" width="0.0" height="16"/>
+                                                            <rect key="frame" x="1" y="1" width="159" height="16"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </scroller>
                                                         <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="PBD-uB-0CY">
-                                                            <rect key="frame" x="-15" y="17" width="16" height="0.0"/>
+                                                            <rect key="frame" x="144" y="17" width="16" height="0.0"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                         </scroller>
                                                         <tableHeaderView key="headerView" id="gDF-tW-OXQ">
