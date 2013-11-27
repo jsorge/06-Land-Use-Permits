@@ -12,7 +12,7 @@
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" wantsToBeColor="NO" visibleAtLaunch="NO" animationBehavior="default" id="5" userLabel="Window">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="304" y="204" width="760" height="487"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
@@ -335,7 +335,7 @@
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </tableHeaderView>
                                         </scrollView>
-                                        <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dtb-Ss-S0d">
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dtb-Ss-S0d">
                                             <rect key="frame" x="36" y="161" width="48" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="+" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rJB-cz-i72">
@@ -346,7 +346,7 @@
                                                 <action selector="add:" target="qFZ-2K-L4N" id="Kzz-jG-mah"/>
                                             </connections>
                                         </button>
-                                        <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iy6-93-O1H">
+                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iy6-93-O1H">
                                             <rect key="frame" x="90" y="161" width="48" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="-" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Nld-0t-wtd">
@@ -554,16 +554,12 @@
                                         </popUpButton>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="iy6-93-O1H" firstAttribute="top" secondItem="53Q-1l-VGK" secondAttribute="top" id="0NX-WL-cum"/>
                                         <constraint firstItem="dwk-yY-qJa" firstAttribute="top" secondItem="OtN-gg-sk2" secondAttribute="top" constant="3" id="1uG-2f-Ccx"/>
                                         <constraint firstItem="mhA-ZE-BZj" firstAttribute="bottom" secondItem="bPt-JI-d6v" secondAttribute="bottom" id="4B0-O6-Unt"/>
                                         <constraint firstItem="hty-Kq-9uZ" firstAttribute="baseline" secondItem="53Q-1l-VGK" secondAttribute="baseline" id="4F9-AG-9ze"/>
                                         <constraint firstAttribute="trailing" secondItem="53Q-1l-VGK" secondAttribute="trailing" constant="334" id="4ho-YY-6sU"/>
-                                        <constraint firstAttribute="bottom" secondItem="Dtb-Ss-S0d" secondAttribute="bottom" constant="168" id="4mW-JG-1uL"/>
-                                        <constraint firstItem="Dtb-Ss-S0d" firstAttribute="top" secondItem="OtN-gg-sk2" secondAttribute="top" constant="236" id="7I7-rZ-OD8"/>
                                         <constraint firstAttribute="trailing" secondItem="hty-Kq-9uZ" secondAttribute="trailing" constant="47" id="7cI-JJ-M1E"/>
                                         <constraint firstItem="mfY-um-SHG" firstAttribute="top" secondItem="jVW-8c-hHV" secondAttribute="bottom" constant="8" symbolic="YES" id="8ca-Jp-e2g"/>
-                                        <constraint firstItem="iy6-93-O1H" firstAttribute="leading" secondItem="Dtb-Ss-S0d" secondAttribute="trailing" constant="18" id="98o-Ez-38x"/>
                                         <constraint firstItem="PYb-T1-aNC" firstAttribute="trailing" secondItem="53Q-1l-VGK" secondAttribute="trailing" id="9KP-JR-GEW"/>
                                         <constraint firstItem="FLu-2P-5ks" firstAttribute="baseline" secondItem="Oed-fx-Ms1" secondAttribute="baseline" id="9Ng-Mj-OMW"/>
                                         <constraint firstItem="wFH-8H-hwH" firstAttribute="trailing" secondItem="kcx-Mp-j3R" secondAttribute="trailing" id="9m6-gL-nHq"/>
@@ -584,7 +580,6 @@
                                         <constraint firstItem="yio-Pk-a8g" firstAttribute="trailing" secondItem="bXM-f0-7v3" secondAttribute="trailing" id="OM2-Yh-ujz"/>
                                         <constraint firstItem="kcx-Mp-j3R" firstAttribute="top" secondItem="dwk-yY-qJa" secondAttribute="bottom" constant="8" symbolic="YES" id="PhM-2e-psT"/>
                                         <constraint firstAttribute="bottom" secondItem="HeB-aI-2RC" secondAttribute="bottom" constant="129" id="SpG-nQ-r4t"/>
-                                        <constraint firstItem="Dtb-Ss-S0d" firstAttribute="leading" secondItem="OtN-gg-sk2" secondAttribute="leading" constant="42" id="Sr6-c0-YcZ"/>
                                         <constraint firstItem="FLu-2P-5ks" firstAttribute="leading" secondItem="Oed-fx-Ms1" secondAttribute="trailing" constant="8" symbolic="YES" id="UWW-9X-JEQ"/>
                                         <constraint firstAttribute="bottom" secondItem="PYb-T1-aNC" secondAttribute="bottom" constant="17" id="X2l-IP-Ghg"/>
                                         <constraint firstItem="yio-Pk-a8g" firstAttribute="trailing" secondItem="FLu-2P-5ks" secondAttribute="trailing" id="XAV-xR-oRG"/>
