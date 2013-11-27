@@ -2,7 +2,7 @@
 //  Application.h
 //  Land Use Permits
 //
-//  Created by Jared Sorge on 11/23/13.
+//  Created by Jared Sorge on 11/26/13.
 //  Copyright (c) 2013 jsorge. All rights reserved.
 //
 
@@ -17,7 +17,7 @@
 @property (nonatomic, retain) NSDate * applicationDate;
 @property (nonatomic, retain) NSString * applicationDescription;
 @property (nonatomic, retain) NSString * applicationPermitNumber;
-@property (nonatomic, retain) NSNumber * category;
+@property (nonatomic, retain) NSString * category;
 @property (nonatomic, retain) NSNumber * contractor;
 @property (nonatomic, retain) NSDate * decisionDate;
 @property (nonatomic, retain) NSString * decisionType;

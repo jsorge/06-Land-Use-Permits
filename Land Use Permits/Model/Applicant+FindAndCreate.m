@@ -15,6 +15,12 @@ NSString *const applicantEntityName = @"Applicant";
 
 @implementation Applicant (FindAndCreate)
 
+#pragma mark - Insert
+- (void)awakeFromInsert
+{
+    self.name = @"Homer";
+}
+
 #pragma mark - API
 + (Applicant *)findOrCreateApplicantWithName:(NSString *)name context:(NSManagedObjectContext *)context
 {

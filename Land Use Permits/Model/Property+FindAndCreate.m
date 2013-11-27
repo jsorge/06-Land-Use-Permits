@@ -14,9 +14,15 @@ NSString *const propertyEntityName = @"Property";
 
 @implementation Property (FindAndCreate)
 
+#pragma mark - Insert
+- (void)awakeFromInsert
+{
+    self.address = @"742 Evergreen Terrace";
+    self.latitude = @47.569099;
+    self.longitude = @-122.230561;
+}
+
 #pragma mark - Public API
-
-
 + (Property *)findOrCreatePropertyWithAddress:(NSString *)address context:(NSManagedObjectContext *)context
 {
     NSArray *properties = [self findPropertiesWithAddress:address context:context];

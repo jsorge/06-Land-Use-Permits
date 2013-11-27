@@ -15,9 +15,17 @@ NSString *const applicationEntityName = @"Application";
 
 @implementation Application (FindAndCreate)
 
+#pragma mark - Inserts
+- (void)awakeFromInsert
+{
+    self.applicationDate = [NSDate date];
+    self.applicationDescription = @"A new permit";
+    self.appealed = @0;
+    self.category = @"Building";
+    self.decisionType = @"Approval";
+}
+
 #pragma mark - API
-
-
 + (Application *)findOrCreateApplicationWithPermitNumber:(NSString *)permitNumber context:(NSManagedObjectContext *)context
 {
     NSArray *applications = [self applicationsWithPermitNumber:permitNumber context:context];
