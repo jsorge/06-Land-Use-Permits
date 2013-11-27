@@ -38,17 +38,13 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" autosaveColumns="NO" headerView="Wtl-K5-nDr" id="OoR-YV-eH0">
-<<<<<<< HEAD
-                                                        <rect key="frame" x="0.0" y="0.0" width="1526" height="209"/>
-=======
                                                         <rect key="frame" x="0.0" y="0.0" width="1326" height="235"/>
->>>>>>> refs/heads/setupSearch
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <size key="intercellSpacing" width="3" height="2"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                         <tableColumns>
-                                                            <tableColumn width="100" minWidth="10" maxWidth="3.4028234663852886e+38" id="ZYX-tt-sKl">
+                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="ZYX-tt-sKl">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Permit #">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -64,7 +60,7 @@
                                                                     <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.applicationPermitNumber" id="Wgh-Li-V3T"/>
                                                                 </connections>
                                                             </tableColumn>
-                                                            <tableColumn width="125" minWidth="10" maxWidth="3.4028234663852886e+38" id="C8p-0s-Fu6">
+                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="C8p-0s-Fu6">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Address">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -96,7 +92,7 @@
                                                                     <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.appealed" id="Ccr-Sm-A70"/>
                                                                 </connections>
                                                             </tableColumn>
-                                                            <tableColumn width="125" minWidth="10" maxWidth="3.4028234663852886e+38" id="mjJ-34-f3r">
+                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="mjJ-34-f3r">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Name">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -144,7 +140,7 @@
                                                                     <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.applicationDescription" id="SvY-Ew-wbI"/>
                                                                 </connections>
                                                             </tableColumn>
-                                                            <tableColumn width="100" minWidth="10" maxWidth="3.4028234663852886e+38" id="tJE-0R-9Kb">
+                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="tJE-0R-9Kb">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Category">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -160,7 +156,7 @@
                                                                     <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.category" id="67H-AG-wgH"/>
                                                                 </connections>
                                                             </tableColumn>
-                                                            <tableColumn width="125" minWidth="10" maxWidth="3.4028234663852886e+38" id="vJZ-ce-Qi8">
+                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="vJZ-ce-Qi8">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Contractor">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -334,17 +330,12 @@
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                             <tableHeaderView key="headerView" id="Wtl-K5-nDr">
-                                                <rect key="frame" x="0.0" y="0.0" width="1526" height="17"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="1326" height="17"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </tableHeaderView>
                                         </scrollView>
-<<<<<<< HEAD
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dtb-Ss-S0d">
-                                            <rect key="frame" x="36" y="161" width="48" height="32"/>
-=======
                                         <button verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dtb-Ss-S0d">
                                             <rect key="frame" x="11" y="161" width="48" height="32"/>
->>>>>>> refs/heads/setupSearch
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="36" id="agb-61-oEZ"/>
@@ -357,13 +348,8 @@
                                                 <action selector="add:" target="qFZ-2K-L4N" id="Kzz-jG-mah"/>
                                             </connections>
                                         </button>
-<<<<<<< HEAD
-                                        <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iy6-93-O1H">
-                                            <rect key="frame" x="90" y="161" width="48" height="32"/>
-=======
                                         <button verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iy6-93-O1H">
                                             <rect key="frame" x="65" y="161" width="48" height="32"/>
->>>>>>> refs/heads/setupSearch
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="-" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Nld-0t-wtd">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -596,50 +582,6 @@
                                         </searchField>
                                     </subviews>
                                     <constraints>
-<<<<<<< HEAD
-                                        <constraint firstItem="dwk-yY-qJa" firstAttribute="top" secondItem="OtN-gg-sk2" secondAttribute="top" constant="3" id="1uG-2f-Ccx"/>
-                                        <constraint firstItem="mhA-ZE-BZj" firstAttribute="bottom" secondItem="bPt-JI-d6v" secondAttribute="bottom" id="4B0-O6-Unt"/>
-                                        <constraint firstItem="hty-Kq-9uZ" firstAttribute="baseline" secondItem="53Q-1l-VGK" secondAttribute="baseline" id="4F9-AG-9ze"/>
-                                        <constraint firstAttribute="trailing" secondItem="53Q-1l-VGK" secondAttribute="trailing" constant="334" id="4ho-YY-6sU"/>
-                                        <constraint firstAttribute="trailing" secondItem="hty-Kq-9uZ" secondAttribute="trailing" constant="47" id="7cI-JJ-M1E"/>
-                                        <constraint firstItem="mfY-um-SHG" firstAttribute="top" secondItem="jVW-8c-hHV" secondAttribute="bottom" constant="8" symbolic="YES" id="8ca-Jp-e2g"/>
-                                        <constraint firstItem="PYb-T1-aNC" firstAttribute="trailing" secondItem="53Q-1l-VGK" secondAttribute="trailing" id="9KP-JR-GEW"/>
-                                        <constraint firstItem="FLu-2P-5ks" firstAttribute="baseline" secondItem="Oed-fx-Ms1" secondAttribute="baseline" id="9Ng-Mj-OMW"/>
-                                        <constraint firstItem="wFH-8H-hwH" firstAttribute="trailing" secondItem="kcx-Mp-j3R" secondAttribute="trailing" id="9m6-gL-nHq"/>
-                                        <constraint firstItem="53Q-1l-VGK" firstAttribute="leading" secondItem="OtN-gg-sk2" secondAttribute="leading" constant="152" id="AYU-BE-odg"/>
-                                        <constraint firstItem="bXM-f0-7v3" firstAttribute="baseline" secondItem="jVW-8c-hHV" secondAttribute="baseline" id="DRg-gI-fkK"/>
-                                        <constraint firstItem="PYb-T1-aNC" firstAttribute="leading" secondItem="OtN-gg-sk2" secondAttribute="leading" constant="42" id="DaD-ME-dmL"/>
-                                        <constraint firstItem="bPt-JI-d6v" firstAttribute="trailing" secondItem="wFH-8H-hwH" secondAttribute="trailing" id="E6g-dL-fAx"/>
-                                        <constraint firstAttribute="bottom" secondItem="FLu-2P-5ks" secondAttribute="bottom" constant="25" id="Emu-eT-WEH"/>
-                                        <constraint firstItem="wFH-8H-hwH" firstAttribute="top" secondItem="kcx-Mp-j3R" secondAttribute="bottom" constant="8" symbolic="YES" id="GRI-FO-2js"/>
-                                        <constraint firstItem="yio-Pk-a8g" firstAttribute="leading" secondItem="bXM-f0-7v3" secondAttribute="leading" id="H8C-At-mDJ"/>
-                                        <constraint firstItem="Qc7-5e-HGO" firstAttribute="leading" secondItem="hty-Kq-9uZ" secondAttribute="leading" id="Hbb-Vh-iJu"/>
-                                        <constraint firstAttribute="trailing" secondItem="dwk-yY-qJa" secondAttribute="trailing" constant="17" id="JsC-za-a5N"/>
-                                        <constraint firstItem="mhA-ZE-BZj" firstAttribute="leading" secondItem="bPt-JI-d6v" secondAttribute="trailing" constant="8" symbolic="YES" id="Khr-lz-ER1"/>
-                                        <constraint firstItem="Qc7-5e-HGO" firstAttribute="trailing" secondItem="hty-Kq-9uZ" secondAttribute="trailing" id="MJg-fc-cre"/>
-                                        <constraint firstItem="dwk-yY-qJa" firstAttribute="leading" secondItem="OtN-gg-sk2" secondAttribute="leading" constant="17" id="MQD-O4-A12"/>
-                                        <constraint firstItem="jVW-8c-hHV" firstAttribute="top" secondItem="bPt-JI-d6v" secondAttribute="bottom" constant="8" symbolic="YES" id="NJH-P4-6N2"/>
-                                        <constraint firstItem="mhA-ZE-BZj" firstAttribute="top" secondItem="Qc7-5e-HGO" secondAttribute="bottom" constant="17" id="NXL-o4-9gx"/>
-                                        <constraint firstItem="yio-Pk-a8g" firstAttribute="trailing" secondItem="bXM-f0-7v3" secondAttribute="trailing" id="OM2-Yh-ujz"/>
-                                        <constraint firstItem="kcx-Mp-j3R" firstAttribute="top" secondItem="dwk-yY-qJa" secondAttribute="bottom" constant="8" symbolic="YES" id="PhM-2e-psT"/>
-                                        <constraint firstAttribute="bottom" secondItem="HeB-aI-2RC" secondAttribute="bottom" constant="129" id="SpG-nQ-r4t"/>
-                                        <constraint firstItem="FLu-2P-5ks" firstAttribute="leading" secondItem="Oed-fx-Ms1" secondAttribute="trailing" constant="8" symbolic="YES" id="UWW-9X-JEQ"/>
-                                        <constraint firstAttribute="bottom" secondItem="PYb-T1-aNC" secondAttribute="bottom" constant="17" id="X2l-IP-Ghg"/>
-                                        <constraint firstItem="yio-Pk-a8g" firstAttribute="trailing" secondItem="FLu-2P-5ks" secondAttribute="trailing" id="XAV-xR-oRG"/>
-                                        <constraint firstItem="PYb-T1-aNC" firstAttribute="leading" secondItem="HeB-aI-2RC" secondAttribute="leading" id="XzQ-oR-wMd"/>
-                                        <constraint firstItem="yio-Pk-a8g" firstAttribute="leading" secondItem="FLu-2P-5ks" secondAttribute="leading" id="aQl-cz-xUe"/>
-                                        <constraint firstItem="yio-Pk-a8g" firstAttribute="leading" secondItem="mfY-um-SHG" secondAttribute="trailing" constant="8" symbolic="YES" id="bjw-mO-7qa"/>
-                                        <constraint firstItem="mhA-ZE-BZj" firstAttribute="trailing" secondItem="bXM-f0-7v3" secondAttribute="trailing" id="cLC-kQ-wtt"/>
-                                        <constraint firstItem="PYb-T1-aNC" firstAttribute="top" secondItem="OtN-gg-sk2" secondAttribute="top" constant="296" id="eIL-qT-MMv"/>
-                                        <constraint firstItem="hty-Kq-9uZ" firstAttribute="top" secondItem="dwk-yY-qJa" secondAttribute="bottom" constant="8" id="iUl-Mq-rlV"/>
-                                        <constraint firstItem="FLu-2P-5ks" firstAttribute="top" secondItem="yio-Pk-a8g" secondAttribute="bottom" constant="5" id="lfL-Xs-yly"/>
-                                        <constraint firstItem="hty-Kq-9uZ" firstAttribute="leading" secondItem="kcx-Mp-j3R" secondAttribute="trailing" constant="10" id="oDf-uf-MXw"/>
-                                        <constraint firstItem="yio-Pk-a8g" firstAttribute="baseline" secondItem="mfY-um-SHG" secondAttribute="baseline" id="tyV-iv-jbr"/>
-                                        <constraint firstItem="bXM-f0-7v3" firstAttribute="leading" secondItem="jVW-8c-hHV" secondAttribute="trailing" constant="8" symbolic="YES" id="uKM-6h-i3A"/>
-                                        <constraint firstItem="bXM-f0-7v3" firstAttribute="leading" secondItem="mhA-ZE-BZj" secondAttribute="leading" id="uep-Hb-yqk"/>
-                                        <constraint firstItem="Qc7-5e-HGO" firstAttribute="centerY" secondItem="wFH-8H-hwH" secondAttribute="centerY" id="xvu-D2-nQh"/>
-                                        <constraint firstItem="Qc7-5e-HGO" firstAttribute="trailing" secondItem="mhA-ZE-BZj" secondAttribute="trailing" id="y23-yx-rHE"/>
-=======
                                         <constraint firstItem="Dtb-Ss-S0d" firstAttribute="baseline" secondItem="iy6-93-O1H" secondAttribute="baseline" id="0HE-k6-q2R"/>
                                         <constraint firstItem="bXM-f0-7v3" firstAttribute="leading" secondItem="mhA-ZE-BZj" secondAttribute="leading" id="1UY-Yg-fcT"/>
                                         <constraint firstItem="Qc7-5e-HGO" firstAttribute="leading" secondItem="hty-Kq-9uZ" secondAttribute="leading" id="29h-Rl-5EB"/>
@@ -682,7 +624,6 @@
                                         <constraint firstItem="mhA-ZE-BZj" firstAttribute="bottom" secondItem="bPt-JI-d6v" secondAttribute="bottom" id="vjM-nM-jd7"/>
                                         <constraint firstItem="PYb-T1-aNC" firstAttribute="trailing" secondItem="53Q-1l-VGK" secondAttribute="trailing" id="zFY-WC-wGr"/>
                                         <constraint firstItem="3od-LJ-amN" firstAttribute="trailing" secondItem="dwk-yY-qJa" secondAttribute="trailing" id="zKo-rS-ml8"/>
->>>>>>> refs/heads/setupSearch
                                     </constraints>
                                 </view>
                             </tabViewItem>
