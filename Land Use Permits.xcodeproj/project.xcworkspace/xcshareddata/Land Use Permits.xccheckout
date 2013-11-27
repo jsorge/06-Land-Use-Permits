@@ -5,19 +5,31 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
+<<<<<<< HEAD
 	<string>F5EE3AC7-6802-41FA-BF37-9A0ACA43BA29</string>
+=======
+	<string>E329E92E-B045-4DDC-BC0B-29810F9A8F40</string>
+>>>>>>> refs/heads/setupSearch
 	<key>IDESourceControlProjectName</key>
 	<string>Land Use Permits</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+<<<<<<< HEAD
 		<key>6E6FF568-1472-4984-8479-9B3D48AC6000</key>
+=======
+		<key>DDFBC830-6DF1-4FA8-B43F-7573D623BC7F</key>
+>>>>>>> refs/heads/setupSearch
 		<string>https://github.com/jsorge/06-Land-Use-Permits.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Land Use Permits.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+<<<<<<< HEAD
 		<key>6E6FF568-1472-4984-8479-9B3D48AC6000</key>
+=======
+		<key>DDFBC830-6DF1-4FA8-B43F-7573D623BC7F</key>
+>>>>>>> refs/heads/setupSearch
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +37,22 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
+<<<<<<< HEAD
 	<string>6E6FF568-1472-4984-8479-9B3D48AC6000</string>
+=======
+	<string>DDFBC830-6DF1-4FA8-B43F-7573D623BC7F</string>
+>>>>>>> refs/heads/setupSearch
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
+<<<<<<< HEAD
 			<string>6E6FF568-1472-4984-8479-9B3D48AC6000</string>
+=======
+			<string>DDFBC830-6DF1-4FA8-B43F-7573D623BC7F</string>
+>>>>>>> refs/heads/setupSearch
 			<key>IDESourceControlWCCName</key>
 			<string>Land Use Permits</string>
 		</dict>
