@@ -1,27 +1,26 @@
-//
-//  Applicant.h
-//  Land Use Permits
-//
-//  Created by Jared Sorge on 11/23/13.
-//  Copyright (c) 2013 jsorge. All rights reserved.
-//
+#import "_Applicant.h"
 
-#import <Foundation/Foundation.h>
-#import <CoreData/CoreData.h>
+@interface Applicant : _Applicant {}
 
-@class Application;
+/**
+ *  Returns the applicant based on the name search
+ *
+ *  @param name    Applicant's name
+ *  @param context Managed Object Context
+ *
+ *  @return Applicant
+ */
++ (Applicant *)findOrCreateApplicantWithName:(NSString *)name context:(NSManagedObjectContext *)context;
 
-@interface Applicant : NSManagedObject
+/**
+ *  Finds all applicants with a given name
+ *
+ *  @param name    Applicant's name
+ *  @param context Managed Object Context
+ *
+ *  @return An array of applicants
+ */
++ (NSArray *)findApplicantsWithName:(NSString *)name context:(NSManagedObjectContext *)context;
 
-@property (nonatomic, retain) NSString * name;
-@property (nonatomic, retain) NSSet *applications;
-@end
-
-@interface Applicant (CoreDataGeneratedAccessors)
-
-- (void)addApplicationsObject:(Application *)value;
-- (void)removeApplicationsObject:(Application *)value;
-- (void)addApplications:(NSSet *)values;
-- (void)removeApplications:(NSSet *)values;
 
 @end

@@ -7,9 +7,9 @@
 //
 
 #import "JMSDocument.h"
-#import "Application+FindAndCreate.h"
-#import "Applicant+FindAndCreate.h"
-#import "Property+FindAndCreate.h"
+#import "Application.h"
+#import "Applicant.h"
+#import "Property.h"
 
 @implementation JMSDocument
 

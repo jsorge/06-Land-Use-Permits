@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		934A049C1845BA3E004CA0F6 /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = 934A049B1845BA3E004CA0F6 /* Application.m */; };
-		93AEF5CD184056F50064D1F4 /* Application+FindAndCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AEF5CC184056F50064D1F4 /* Application+FindAndCreate.m */; };
-		93AEF5D01840571C0064D1F4 /* Property+FindAndCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AEF5CF1840571C0064D1F4 /* Property+FindAndCreate.m */; };
-		93AEF5D3184057330064D1F4 /* Applicant+FindAndCreate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93AEF5D2184057330064D1F4 /* Applicant+FindAndCreate.m */; };
+		934A04A41847A95F004CA0F6 /* _Applicant.m in Sources */ = {isa = PBXBuildFile; fileRef = 934A049F1847A95F004CA0F6 /* _Applicant.m */; };
+		934A04A51847A960004CA0F6 /* _Application.m in Sources */ = {isa = PBXBuildFile; fileRef = 934A04A11847A95F004CA0F6 /* _Application.m */; };
+		934A04A61847A960004CA0F6 /* _Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 934A04A31847A95F004CA0F6 /* _Property.m */; };
 		93D560BB18404ABE00933529 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D560BA18404ABE00933529 /* Cocoa.framework */; };
 		93D560C518404ABF00933529 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93D560C318404ABF00933529 /* InfoPlist.strings */; };
 		93D560C718404ABF00933529 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D560C618404ABF00933529 /* main.m */; };
@@ -41,12 +41,12 @@
 /* Begin PBXFileReference section */
 		934A049A1845BA3E004CA0F6 /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Application.h; path = Model/Application.h; sourceTree = "<group>"; };
 		934A049B1845BA3E004CA0F6 /* Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Application.m; path = Model/Application.m; sourceTree = "<group>"; };
-		93AEF5CB184056F50064D1F4 /* Application+FindAndCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Application+FindAndCreate.h"; path = "Model/Application+FindAndCreate.h"; sourceTree = "<group>"; };
-		93AEF5CC184056F50064D1F4 /* Application+FindAndCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Application+FindAndCreate.m"; path = "Model/Application+FindAndCreate.m"; sourceTree = "<group>"; };
-		93AEF5CE1840571C0064D1F4 /* Property+FindAndCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Property+FindAndCreate.h"; path = "Model/Property+FindAndCreate.h"; sourceTree = "<group>"; };
-		93AEF5CF1840571C0064D1F4 /* Property+FindAndCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Property+FindAndCreate.m"; path = "Model/Property+FindAndCreate.m"; sourceTree = "<group>"; };
-		93AEF5D1184057330064D1F4 /* Applicant+FindAndCreate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Applicant+FindAndCreate.h"; path = "Model/Applicant+FindAndCreate.h"; sourceTree = "<group>"; };
-		93AEF5D2184057330064D1F4 /* Applicant+FindAndCreate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Applicant+FindAndCreate.m"; path = "Model/Applicant+FindAndCreate.m"; sourceTree = "<group>"; };
+		934A049E1847A95F004CA0F6 /* _Applicant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Applicant.h; path = Model/_Applicant.h; sourceTree = "<group>"; };
+		934A049F1847A95F004CA0F6 /* _Applicant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Applicant.m; path = Model/_Applicant.m; sourceTree = "<group>"; };
+		934A04A01847A95F004CA0F6 /* _Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Application.h; path = Model/_Application.h; sourceTree = "<group>"; };
+		934A04A11847A95F004CA0F6 /* _Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Application.m; path = Model/_Application.m; sourceTree = "<group>"; };
+		934A04A21847A95F004CA0F6 /* _Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Property.h; path = Model/_Property.h; sourceTree = "<group>"; };
+		934A04A31847A95F004CA0F6 /* _Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Property.m; path = Model/_Property.m; sourceTree = "<group>"; };
 		93D560B718404ABE00933529 /* Land Use Permits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Land Use Permits.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D560BA18404ABE00933529 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		93D560BD18404ABF00933529 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -181,19 +181,19 @@
 		93D560FD18404F8A00933529 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				93D560D518404ABF00933529 /* JMSDocument.xcdatamodeld */,
+				934A049E1847A95F004CA0F6 /* _Applicant.h */,
+				934A049F1847A95F004CA0F6 /* _Applicant.m */,
+				934A04A01847A95F004CA0F6 /* _Application.h */,
+				934A04A11847A95F004CA0F6 /* _Application.m */,
+				934A04A21847A95F004CA0F6 /* _Property.h */,
+				934A04A31847A95F004CA0F6 /* _Property.m */,
 				934A049A1845BA3E004CA0F6 /* Application.h */,
 				934A049B1845BA3E004CA0F6 /* Application.m */,
-				93D560D518404ABF00933529 /* JMSDocument.xcdatamodeld */,
 				93DEB4BB184163CD00C8A080 /* Applicant.h */,
 				93DEB4BC184163CD00C8A080 /* Applicant.m */,
 				93DEB4B8184163CD00C8A080 /* Property.h */,
 				93DEB4B9184163CD00C8A080 /* Property.m */,
-				93AEF5CB184056F50064D1F4 /* Application+FindAndCreate.h */,
-				93AEF5CC184056F50064D1F4 /* Application+FindAndCreate.m */,
-				93AEF5CE1840571C0064D1F4 /* Property+FindAndCreate.h */,
-				93AEF5CF1840571C0064D1F4 /* Property+FindAndCreate.m */,
-				93AEF5D1184057330064D1F4 /* Applicant+FindAndCreate.h */,
-				93AEF5D2184057330064D1F4 /* Applicant+FindAndCreate.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -205,6 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93D560EE18404ABF00933529 /* Build configuration list for PBXNativeTarget "Land Use Permits" */;
 			buildPhases = (
+				934A049D1845BC35004CA0F6 /* ShellScript */,
 				93D560B318404ABE00933529 /* Sources */,
 				93D560B418404ABE00933529 /* Frameworks */,
 				93D560B518404ABE00933529 /* Resources */,
@@ -293,19 +294,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		934A049D1845BC35004CA0F6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# The approach used here is adopted from the following source:\n# http://nsscreencast.com/episodes/12-importing-into-core-data\n#\n# Since version 1.27, mogenerator automatically uses the current version of the data model\n\nPROJECT_FOLDER=\"Land Use Permits\"\nMODELS_DIR=\"${PROJECT_FOLDER}/Model\"\nDATA_MODEL=\"${PROJECT_FOLDER}/JMSDocument.xcdatamodeld\"\n\n# Homebrew stores mogenerator in /usr/local/bin\nPATH=${PATH}:/usr/local/bin\n\nmogenerator --template-var arc=true --model \"${DATA_MODEL}\" --output-dir \"${MODELS_DIR}/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		93D560B318404ABE00933529 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934A04A41847A95F004CA0F6 /* _Applicant.m in Sources */,
+				934A04A51847A960004CA0F6 /* _Application.m in Sources */,
 				934A049C1845BA3E004CA0F6 /* Application.m in Sources */,
 				93D560D718404ABF00933529 /* JMSDocument.xcdatamodeld in Sources */,
-				93AEF5D3184057330064D1F4 /* Applicant+FindAndCreate.m in Sources */,
 				93DEB4BD184163CD00C8A080 /* Applicant.m in Sources */,
-				93AEF5D01840571C0064D1F4 /* Property+FindAndCreate.m in Sources */,
-				93AEF5CD184056F50064D1F4 /* Application+FindAndCreate.m in Sources */,
 				93D560C718404ABF00933529 /* main.m in Sources */,
 				93D560CE18404ABF00933529 /* JMSDocument.m in Sources */,
+				934A04A61847A960004CA0F6 /* _Property.m in Sources */,
 				93DEB4BA184163CD00C8A080 /* Property.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

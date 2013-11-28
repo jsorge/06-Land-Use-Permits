@@ -1,34 +1,25 @@
-//
-//  Application.h
-//  Land Use Permits
-//
-//  Created by Jared Sorge on 11/26/13.
-//  Copyright (c) 2013 jsorge. All rights reserved.
-//
+#import "_Application.h"
 
-#import <Foundation/Foundation.h>
-#import <CoreData/CoreData.h>
+@interface Application : _Application {}
 
-@class Applicant, Property;
+/**
+ *  Searches for an application by permit number. If one is present it is returned otherwise it is created
+ *
+ *  @param permitNumber Permit number
+ *  @param context      Managed Object Context
+ *
+ *  @return Application
+ */
++ (Application *)findOrCreateApplicationWithPermitNumber:(NSString *)permitNumber context:(NSManagedObjectContext *)context;
 
-@interface Application : NSManagedObject
-
-@property (nonatomic, retain) NSNumber * appealed;
-@property (nonatomic, retain) NSDate * applicationDate;
-@property (nonatomic, retain) NSString * applicationDescription;
-@property (nonatomic, retain) NSString * applicationPermitNumber;
-@property (nonatomic, retain) NSString * category;
-@property (nonatomic, retain) NSNumber * contractor;
-@property (nonatomic, retain) NSDate * decisionDate;
-@property (nonatomic, retain) NSString * decisionType;
-@property (nonatomic, retain) NSNumber * designReviewIncluded;
-@property (nonatomic, retain) NSNumber * latitude;
-@property (nonatomic, retain) NSNumber * longitude;
-@property (nonatomic, retain) NSString * permitType;
-@property (nonatomic, retain) NSString * status;
-@property (nonatomic, retain) NSString * statusURL;
-@property (nonatomic, retain) NSNumber * value;
-@property (nonatomic, retain) Applicant *applicant;
-@property (nonatomic, retain) Property *property;
+/**
+ *  Fetches all applications with a given permit number
+ *
+ *  @param permitNumber Permit Number
+ *  @param context      Managed Object Context
+ *
+ *  @return Array of applications
+ */
++ (NSArray *)applicationsWithPermitNumber:(NSString *)permitNumber context:(NSManagedObjectContext *)context;
 
 @end

@@ -1,34 +1,50 @@
-//
-//  Application.m
-//  Land Use Permits
-//
-//  Created by Jared Sorge on 11/26/13.
-//  Copyright (c) 2013 jsorge. All rights reserved.
-//
-
 #import "Application.h"
-#import "Applicant.h"
-#import "Property.h"
+
+NSString *const fetchApplicationByPermitNumber = @"FetchApplicationByPermitNumber";
+NSString *const applicationPermitToken = @"PERMIT_NUMBER";
+NSString *const applicationEntityName = @"Application";
+
+@interface Application ()
+
+// Private interface goes here.
+
+@end
 
 
 @implementation Application
 
-@dynamic appealed;
-@dynamic applicationDate;
-@dynamic applicationDescription;
-@dynamic applicationPermitNumber;
-@dynamic category;
-@dynamic contractor;
-@dynamic decisionDate;
-@dynamic decisionType;
-@dynamic designReviewIncluded;
-@dynamic latitude;
-@dynamic longitude;
-@dynamic permitType;
-@dynamic status;
-@dynamic statusURL;
-@dynamic value;
-@dynamic applicant;
-@dynamic property;
+#pragma mark - Inserts
+- (void)awakeFromInsert
+{
+    self.applicationDate = [NSDate date];
+    self.applicationDescription = @"A new permit";
+    self.appealed = @0;
+    self.category = @"Building";
+    self.decisionType = @"Approval";
+}
+
+#pragma mark - API
++ (Application *)findOrCreateApplicationWithPermitNumber:(NSString *)permitNumber context:(NSManagedObjectContext *)context
+{
+    NSArray *applications = [self applicationsWithPermitNumber:permitNumber context:context];
+    Application *application = [applications lastObject];
+    
+    if (!application) {
+        application = [NSEntityDescription insertNewObjectForEntityForName:applicationEntityName inManagedObjectContext:context];
+        application.applicationPermitNumber = permitNumber;
+    }
+    return application;
+}
+
++ (NSArray *)applicationsWithPermitNumber:(NSString *)permitNumber context:(NSManagedObjectContext *)context
+{
+    NSError *error;
+    NSManagedObjectModel *model = context.persistentStoreCoordinator.managedObjectModel;
+    
+    NSFetchRequest *fetch = [model fetchRequestFromTemplateWithName:fetchApplicationByPermitNumber substitutionVariables:@{applicationPermitToken: permitNumber}];
+    NSArray *fetchResult = [context executeFetchRequest:fetch error:&error];
+    
+    return fetchResult;
+}
 
 @end

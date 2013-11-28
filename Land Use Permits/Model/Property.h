@@ -1,29 +1,26 @@
-//
-//  Property.h
-//  Land Use Permits
-//
-//  Created by Jared Sorge on 11/23/13.
-//  Copyright (c) 2013 jsorge. All rights reserved.
-//
+#import "_Property.h"
 
-#import <Foundation/Foundation.h>
-#import <CoreData/CoreData.h>
+@interface Property : _Property {}
 
-@class Application;
+/**
+ *  Returns a property either created or fetched givn its address
+ *
+ *  @param address Property Address
+ *  @param context Managed Object Context
+ *
+ *  @return Property
+ */
++ (Property *)findOrCreatePropertyWithAddress:(NSString *)address context:(NSManagedObjectContext *)context;
 
-@interface Property : NSManagedObject
+/**
+ *  Finds all properties by a given address
+ *
+ *  @param address Property Address
+ *  @param context Managed Object Context
+ *
+ *  @return Array of Properties
+ */
++ (NSArray *)findPropertiesWithAddress:(NSString *)address context:(NSManagedObjectContext *)context;
 
-@property (nonatomic, retain) NSString * address;
-@property (nonatomic, retain) NSNumber * latitude;
-@property (nonatomic, retain) NSNumber * longitude;
-@property (nonatomic, retain) NSSet *applications;
-@end
-
-@interface Property (CoreDataGeneratedAccessors)
-
-- (void)addApplicationsObject:(Application *)value;
-- (void)removeApplicationsObject:(Application *)value;
-- (void)addApplications:(NSSet *)values;
-- (void)removeApplications:(NSSet *)values;
 
 @end
