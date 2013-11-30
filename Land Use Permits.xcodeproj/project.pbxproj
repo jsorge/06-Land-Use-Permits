@@ -11,6 +11,7 @@
 		934A04A41847A95F004CA0F6 /* _Applicant.m in Sources */ = {isa = PBXBuildFile; fileRef = 934A049F1847A95F004CA0F6 /* _Applicant.m */; };
 		934A04A51847A960004CA0F6 /* _Application.m in Sources */ = {isa = PBXBuildFile; fileRef = 934A04A11847A95F004CA0F6 /* _Application.m */; };
 		934A04A61847A960004CA0F6 /* _Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 934A04A31847A95F004CA0F6 /* _Property.m */; };
+		934A04A91847AE1D004CA0F6 /* JMSLandUsePermitLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 934A04A81847AE1D004CA0F6 /* JMSLandUsePermitLoader.m */; };
 		93D560BB18404ABE00933529 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D560BA18404ABE00933529 /* Cocoa.framework */; };
 		93D560C518404ABF00933529 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93D560C318404ABF00933529 /* InfoPlist.strings */; };
 		93D560C718404ABF00933529 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D560C618404ABF00933529 /* main.m */; };
@@ -47,6 +48,8 @@
 		934A04A11847A95F004CA0F6 /* _Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Application.m; path = Model/_Application.m; sourceTree = "<group>"; };
 		934A04A21847A95F004CA0F6 /* _Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Property.h; path = Model/_Property.h; sourceTree = "<group>"; };
 		934A04A31847A95F004CA0F6 /* _Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = _Property.m; path = Model/_Property.m; sourceTree = "<group>"; };
+		934A04A71847AE1D004CA0F6 /* JMSLandUsePermitLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSLandUsePermitLoader.h; sourceTree = "<group>"; };
+		934A04A81847AE1D004CA0F6 /* JMSLandUsePermitLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSLandUsePermitLoader.m; sourceTree = "<group>"; };
 		93D560B718404ABE00933529 /* Land Use Permits.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Land Use Permits.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D560BA18404ABE00933529 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		93D560BD18404ABF00933529 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -138,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				93D560FD18404F8A00933529 /* Model */,
+				934A04A71847AE1D004CA0F6 /* JMSLandUsePermitLoader.h */,
+				934A04A81847AE1D004CA0F6 /* JMSLandUsePermitLoader.m */,
 				93D560CC18404ABF00933529 /* JMSDocument.h */,
 				93D560CD18404ABF00933529 /* JMSDocument.m */,
 				93D560CF18404ABF00933529 /* JMSDocument.xib */,
@@ -320,6 +325,7 @@
 				934A049C1845BA3E004CA0F6 /* Application.m in Sources */,
 				93D560D718404ABF00933529 /* JMSDocument.xcdatamodeld in Sources */,
 				93DEB4BD184163CD00C8A080 /* Applicant.m in Sources */,
+				934A04A91847AE1D004CA0F6 /* JMSLandUsePermitLoader.m in Sources */,
 				93D560C718404ABF00933529 /* main.m in Sources */,
 				93D560CE18404ABF00933529 /* JMSDocument.m in Sources */,
 				934A04A61847A960004CA0F6 /* _Property.m in Sources */,

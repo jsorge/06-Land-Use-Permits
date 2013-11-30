@@ -2,6 +2,7 @@
 
 @interface Application : _Application {}
 
+#pragma mark - API
 /**
  *  Searches for an application by permit number. If one is present it is returned otherwise it is created
  *
@@ -21,5 +22,25 @@
  *  @return Array of applications
  */
 + (NSArray *)applicationsWithPermitNumber:(NSString *)permitNumber context:(NSManagedObjectContext *)context;
+
+/**
+ *
+ *
+ *  @return The URL string to download the JSON that will populate the data model
+ */
++ (NSString *)jsonDownloadURL;
+
+/**
+ *  Parses out the contents of the data downloaded from the jsonDownloadURL and creates the objects
+ *
+ *  @param data    JSON blob
+ *  @param context NSManagedObjectContext
+ *
+ *  @return YES/NO
+ */
++ (BOOL)repopulateWithData:(NSData *)data inContext:(NSManagedObjectContext *)context;
+
+#pragma mark - Starting Code
++ (void)exploreDatabase:(NSDictionary *)database;
 
 @end

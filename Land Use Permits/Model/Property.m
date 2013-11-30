@@ -13,6 +13,7 @@ NSString *const propertyEntityName = @"Property";
 #pragma mark - Insert
 - (void)awakeFromInsert
 {
+    [super awakeFromInsert];
     self.address = @"742 Evergreen Terrace";
     self.latitude = @47.569099;
     self.longitude = @-122.230561;
@@ -21,7 +22,7 @@ NSString *const propertyEntityName = @"Property";
 #pragma mark - Public API
 + (Property *)findOrCreatePropertyWithAddress:(NSString *)address context:(NSManagedObjectContext *)context
 {
-    NSArray *properties = [self findPropertiesWithAddress:address context:context];
+    NSArray *properties = [Property findPropertiesWithAddress:address context:context];
     Property *property = [properties lastObject];
     
     //If fetch fails then create the object

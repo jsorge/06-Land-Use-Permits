@@ -6,6 +6,8 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="JMSDocument">
             <connections>
+                <outlet property="dummyDataButton" destination="7b1-QM-qEz" id="LFd-Ag-Zsu"/>
+                <outlet property="fetchRemoteButton" destination="EW9-Mw-Wtf" id="LzT-rd-uan"/>
                 <outlet property="window" destination="5" id="18"/>
             </connections>
         </customObject>
@@ -1190,9 +1192,15 @@
                             <action selector="insertFakeData:" target="-2" id="lqc-GP-5AO"/>
                         </connections>
                     </toolbarItem>
+                    <toolbarItem implicitItemIdentifier="01DFC668-0DD0-453E-8872-795BF3D6A10C" label="Fetch Remote Data" paletteLabel="Fetch Remote Data" tag="-1" image="Download Icon" id="EW9-Mw-Wtf">
+                        <connections>
+                            <action selector="fetchRemoteData:" target="-2" id="mM4-ZW-Xah"/>
+                        </connections>
+                    </toolbarItem>
                 </allowedToolbarItems>
                 <defaultToolbarItems>
                     <toolbarItem reference="7b1-QM-qEz"/>
+                    <toolbarItem reference="EW9-Mw-Wtf"/>
                 </defaultToolbarItems>
             </toolbar>
             <connections>
@@ -1237,6 +1245,7 @@
         </arrayController>
     </objects>
     <resources>
+        <image name="Download Icon" width="128" height="128"/>
         <image name="Dummy Icon" width="695" height="695"/>
     </resources>
 </document>

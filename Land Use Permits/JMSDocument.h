@@ -10,8 +10,20 @@
 
 @interface JMSDocument : NSPersistentDocument
 
-@property (weak) IBOutlet NSSearchField *searchField;
-
+#pragma mark - IBActions
+/**
+ *  Creates the fake data to populate the table.
+ *
+ *  @param sender Not used
+ */
 - (IBAction)insertFakeData:(id)sender;
+
+/**
+ *  Fetches the data and populates the core data stack
+ *
+ *  @param sender Not used
+ */
+- (IBAction)fetchRemoteData:(id)sender;
+
 
 @end

@@ -13,13 +13,14 @@ NSString *const applicantEntityName = @"Applicant";
 #pragma mark - Insert
 - (void)awakeFromInsert
 {
+    [super awakeFromInsert];
     self.name = @"Homer";
 }
 
 #pragma mark - API
 + (Applicant *)findOrCreateApplicantWithName:(NSString *)name context:(NSManagedObjectContext *)context
 {
-    NSArray *applicants = [self findApplicantsWithName:name context:context];
+    NSArray *applicants = [Applicant findApplicantsWithName:name context:context];
     Applicant *applicant = [applicants lastObject];
     
     if (!applicant) {

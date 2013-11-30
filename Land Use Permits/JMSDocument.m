@@ -10,6 +10,12 @@
 #import "Application.h"
 #import "Applicant.h"
 #import "Property.h"
+#import "JMSLandUsePermitLoader.h"
+
+@interface JMSDocument ()
+@property (weak) IBOutlet NSToolbarItem *dummyDataButton;
+@property (weak) IBOutlet NSToolbarItem *fetchRemoteButton;
+@end
 
 @implementation JMSDocument
 
@@ -32,7 +38,11 @@
 - (void)windowControllerDidLoadNib:(NSWindowController *)aController
 {
     [super windowControllerDidLoadNib:aController];
-    // Add any code here that needs to be executed once the windowController has loaded the document's window.
+    
+    NSPersistentStoreCoordinator *psc = self.managedObjectContext.persistentStoreCoordinator;
+    NSManagedObjectContext *newMoc = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
+    newMoc.persistentStoreCoordinator = psc;
+    self.managedObjectContext = newMoc;
 }
 
 + (BOOL)autosavesInPlace
@@ -41,14 +51,10 @@
 }
 
 #pragma mark - IBActions
-
-/**
- *  Creates the fake data to populate the table.
- *
- *  @param sender Not used
- */
 - (IBAction)insertFakeData:(id)sender
 {
+    [self.dummyDataButton setEnabled:NO];
+    
     Applicant *larry = [Applicant findOrCreateApplicantWithName:@"Larry" context:self.managedObjectContext];
     Applicant *curly = [Applicant findOrCreateApplicantWithName:@"Curly" context:self.managedObjectContext];
     Applicant *moe = [Applicant findOrCreateApplicantWithName:@"Moe" context:self.managedObjectContext];
@@ -68,6 +74,15 @@
     Application *third = [Application findOrCreateApplicationWithPermitNumber:@"10003" context:self.managedObjectContext];
     third.applicant = moe;
     third.property = boatLaunch;
+    
+    [self.dummyDataButton setEnabled:YES];
+}
+
+- (IBAction)fetchRemoteData:(id)sender
+{
+    [self.fetchRemoteButton setEnabled:NO];
+    JMSLandUsePermitLoader *permitLoader = [[JMSLandUsePermitLoader alloc] init];
+    [permitLoader downloadAndParseData:self.managedObjectContext];
 }
 
 @end
