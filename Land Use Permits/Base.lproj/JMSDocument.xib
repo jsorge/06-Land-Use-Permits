@@ -484,6 +484,9 @@
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
+                                            <connections>
+                                                <binding destination="qFZ-2K-L4N" name="value" keyPath="selection.issueDate" id="Fxt-uX-7Au"/>
+                                            </connections>
                                         </textField>
                                         <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bXM-f0-7v3">
                                             <rect key="frame" x="483" y="77" width="184" height="22"/>

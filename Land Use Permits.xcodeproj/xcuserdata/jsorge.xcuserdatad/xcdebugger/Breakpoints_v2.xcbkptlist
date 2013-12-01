@@ -20,11 +20,45 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Land Use Permits/Model/Application.m"
-            timestampString = "407621987.750627"
+            timestampString = "407631465.0744"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "+repopulateWithData:inContext:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            condition = "appealed == YES"
+            continueAfterRunningActions = "No"
+            filePath = "Land Use Permits/Model/Application.m"
+            timestampString = "407631494.787623"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "+repopulateWithData:inContext:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            condition = "reviewIncluded == YES"
+            continueAfterRunningActions = "No"
+            filePath = "Land Use Permits/Model/Application.m"
+            timestampString = "407631501.026753"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
             landmarkName = "+repopulateWithData:inContext:"
             landmarkType = "5">
          </BreakpointContent>

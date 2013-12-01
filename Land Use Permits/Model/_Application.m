@@ -13,6 +13,7 @@ const struct ApplicationAttributes ApplicationAttributes = {
 	.decisionDate = @"decisionDate",
 	.decisionType = @"decisionType",
 	.designReviewIncluded = @"designReviewIncluded",
+	.issueDate = @"issueDate",
 	.latitude = @"latitude",
 	.longitude = @"longitude",
 	.permitType = @"permitType",
@@ -57,11 +58,6 @@ const struct ApplicationFetchedProperties ApplicationFetchedProperties = {
 	
 	if ([key isEqualToString:@"appealedValue"]) {
 		NSSet *affectingKey = [NSSet setWithObject:@"appealed"];
-		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
-		return keyPaths;
-	}
-	if ([key isEqualToString:@"contractorValue"]) {
-		NSSet *affectingKey = [NSSet setWithObject:@"contractor"];
 		keyPaths = [keyPaths setByAddingObjectsFromSet:affectingKey];
 		return keyPaths;
 	}
@@ -150,25 +146,6 @@ const struct ApplicationFetchedProperties ApplicationFetchedProperties = {
 
 
 
-- (double)contractorValue {
-	NSNumber *result = [self contractor];
-	return [result doubleValue];
-}
-
-- (void)setContractorValue:(double)value_ {
-	[self setContractor:[NSNumber numberWithDouble:value_]];
-}
-
-- (double)primitiveContractorValue {
-	NSNumber *result = [self primitiveContractor];
-	return [result doubleValue];
-}
-
-- (void)setPrimitiveContractorValue:(double)value_ {
-	[self setPrimitiveContractor:[NSNumber numberWithDouble:value_]];
-}
-
-
 
 
 
@@ -207,6 +184,13 @@ const struct ApplicationFetchedProperties ApplicationFetchedProperties = {
 - (void)setPrimitiveDesignReviewIncludedValue:(BOOL)value_ {
 	[self setPrimitiveDesignReviewIncluded:[NSNumber numberWithBool:value_]];
 }
+
+
+
+
+
+@dynamic issueDate;
+
 
 
 

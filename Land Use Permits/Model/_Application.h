@@ -14,6 +14,7 @@ extern const struct ApplicationAttributes {
 	__unsafe_unretained NSString *decisionDate;
 	__unsafe_unretained NSString *decisionType;
 	__unsafe_unretained NSString *designReviewIncluded;
+	__unsafe_unretained NSString *issueDate;
 	__unsafe_unretained NSString *latitude;
 	__unsafe_unretained NSString *longitude;
 	__unsafe_unretained NSString *permitType;
@@ -32,6 +33,7 @@ extern const struct ApplicationFetchedProperties {
 
 @class Applicant;
 @class Property;
+
 
 
 
@@ -116,13 +118,9 @@ extern const struct ApplicationFetchedProperties {
 
 
 
-@property (nonatomic, strong) NSNumber* contractor;
+@property (nonatomic, strong) NSString* contractor;
 
 
-
-@property double contractorValue;
-- (double)contractorValue;
-- (void)setContractorValue:(double)value_;
 
 //- (BOOL)validateContractor:(id*)value_ error:(NSError**)error_;
 
@@ -159,6 +157,16 @@ extern const struct ApplicationFetchedProperties {
 - (void)setDesignReviewIncludedValue:(BOOL)value_;
 
 //- (BOOL)validateDesignReviewIncluded:(id*)value_ error:(NSError**)error_;
+
+
+
+
+
+@property (nonatomic, strong) NSDate* issueDate;
+
+
+
+//- (BOOL)validateIssueDate:(id*)value_ error:(NSError**)error_;
 
 
 
@@ -298,11 +306,8 @@ extern const struct ApplicationFetchedProperties {
 
 
 
-- (NSNumber*)primitiveContractor;
-- (void)setPrimitiveContractor:(NSNumber*)value;
-
-- (double)primitiveContractorValue;
-- (void)setPrimitiveContractorValue:(double)value_;
+- (NSString*)primitiveContractor;
+- (void)setPrimitiveContractor:(NSString*)value;
 
 
 
@@ -324,6 +329,12 @@ extern const struct ApplicationFetchedProperties {
 
 - (BOOL)primitiveDesignReviewIncludedValue;
 - (void)setPrimitiveDesignReviewIncludedValue:(BOOL)value_;
+
+
+
+
+- (NSDate*)primitiveIssueDate;
+- (void)setPrimitiveIssueDate:(NSDate*)value;
 
 
 
