@@ -11,12 +11,12 @@
 
 @implementation JMSLandUsePermitLoader
 #pragma mark - API
-- (BOOL)downloadAndParseData:(NSManagedObjectContext *)context
+- (BOOL)downloadAndParseData:(NSManagedObjectContext *)mainContext
 {
     __block BOOL success = YES;
     
-    NSManagedObjectContext *childContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
-    childContext.parentContext = context;
+    NSManagedObjectContext *workerContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
+    workerContext.parentContext = mainContext;
     
     NSURLSessionConfiguration *sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
     NSURLSession *downloadSession = [NSURLSession sessionWithConfiguration:sessionConfig];
@@ -24,12 +24,16 @@
     NSURLSessionTask *downloadTask =  [downloadSession dataTaskWithURL:downloadURL
                                                      completionHandler:^(NSData *data, NSURLResponse *response, NSError *error){
                                                          if (!error) {
-                                                             success = [Application repopulateWithData:data inContext:childContext];
+                                                             [workerContext performBlock:^{
+                                                                 success = [Application repopulateWithData:data inContext:workerContext];
+                                                                 
+                                                                 [self.delegate permitLoader:self
+                                                                        didFinishWithSuccess:success];
+                                                             }];
                                                          } else {
                                                              NSLog(@"Data download failed with error: %@", error.localizedDescription);
                                                              success = NO;
                                                          }
-                                                         
                                                      }];
     [downloadTask resume];
     

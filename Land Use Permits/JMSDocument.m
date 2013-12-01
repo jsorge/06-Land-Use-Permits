@@ -12,9 +12,10 @@
 #import "Property.h"
 #import "JMSLandUsePermitLoader.h"
 
-@interface JMSDocument ()
+@interface JMSDocument () <JMSLandUsePermitLoaderDelegate>
 @property (weak) IBOutlet NSToolbarItem *dummyDataButton;
 @property (weak) IBOutlet NSToolbarItem *fetchRemoteButton;
+@property (weak) IBOutlet NSTextField *downloadingDataLabel;
 @end
 
 @implementation JMSDocument
@@ -30,8 +31,6 @@
 
 - (NSString *)windowNibName
 {
-    // Override returning the nib file name of the document
-    // If you need to use a subclass of NSWindowController or if your document supports multiple NSWindowControllers, you should remove this method and override -makeWindowControllers instead.
     return @"JMSDocument";
 }
 
@@ -40,9 +39,14 @@
     [super windowControllerDidLoadNib:aController];
     
     NSPersistentStoreCoordinator *psc = self.managedObjectContext.persistentStoreCoordinator;
-    NSManagedObjectContext *newMoc = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
-    newMoc.persistentStoreCoordinator = psc;
-    self.managedObjectContext = newMoc;
+    
+    NSManagedObjectContext *masterContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
+    masterContext.persistentStoreCoordinator = psc;
+    
+    NSManagedObjectContext *mainContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
+//    mainContext.persistentStoreCoordinator = psc;
+    mainContext.parentContext = masterContext;
+    self.managedObjectContext = mainContext;
 }
 
 + (BOOL)autosavesInPlace
@@ -81,8 +85,17 @@
 - (IBAction)fetchRemoteData:(id)sender
 {
     [self.fetchRemoteButton setEnabled:NO];
+    [self.downloadingDataLabel setHidden:NO];
     JMSLandUsePermitLoader *permitLoader = [[JMSLandUsePermitLoader alloc] init];
+    permitLoader.delegate = self;
     [permitLoader downloadAndParseData:self.managedObjectContext];
+}
+
+#pragma mark - JMSLandUsePermitLoaderDelegate
+- (void)permitLoader:(JMSLandUsePermitLoader *)loader didFinishWithSuccess:(BOOL)success
+{
+    [self.fetchRemoteButton setEnabled:YES];
+    [self.downloadingDataLabel setHidden:YES];
 }
 
 @end

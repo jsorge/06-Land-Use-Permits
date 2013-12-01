@@ -33,14 +33,11 @@
 /**
  *  Parses out the contents of the data downloaded from the jsonDownloadURL and creates the objects
  *
- *  @param data    JSON blob
- *  @param context NSManagedObjectContext
+ *  @param data    NSData containing JSON
+ *  @param context NSManagedObjectContext - Preferrably configured with NSPrivateQueueConcurrencyType
  *
  *  @return YES/NO
  */
 + (BOOL)repopulateWithData:(NSData *)data inContext:(NSManagedObjectContext *)context;
-
-#pragma mark - Starting Code
-+ (void)exploreDatabase:(NSDictionary *)database;
 
 @end

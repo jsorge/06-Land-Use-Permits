@@ -16,7 +16,7 @@ NSString *const propertyEntityName = @"Property";
     [super awakeFromInsert];
     self.address = @"742 Evergreen Terrace";
     self.latitude = @47.569099;
-    self.longitude = @-122.230561;
+    self.longitude = [NSNumber numberWithDouble:-122.230561];
 }
 
 #pragma mark - Public API

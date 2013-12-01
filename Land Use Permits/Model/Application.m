@@ -8,6 +8,7 @@ NSString *const applicationEntityName = @"Application";
 
 @interface Application ()
 @property (strong, nonatomic)NSDateFormatter *dateFormatter;
+
 @end
 
 
@@ -31,8 +32,8 @@ NSString *const applicationEntityName = @"Application";
 {
     [super awakeFromInsert];
     self.applicationDate = [NSDate date];
-    self.applicationDescription = @"A new permit";
-    self.appealed = @0;
+    self.applicationDescription = @"New Permit";
+    self.appealed = [NSNumber numberWithBool:NO];
     self.category = @"Building";
     self.decisionType = @"Approval";
 }
@@ -68,7 +69,6 @@ NSString *const applicationEntityName = @"Application";
 
 + (BOOL)repopulateWithData:(NSData *)data inContext:(NSManagedObjectContext *)context
 {
-    NSLog(@"parsing %ld bytes of data", data.length);
     NSDictionary *database;
     NSError *error;
     database = [NSJSONSerialization JSONObjectWithData:data
@@ -79,33 +79,29 @@ NSString *const applicationEntityName = @"Application";
         return NO;
     }
     
-    [self exploreDatabase:database];
-    NSLog(@"data downloaded");
+//    [Application exploreDatabase:database];
     
     int count = 0;
     for (NSArray *row in database[@"data"]) {
-        NSLog(@"%d", count++);
         NSString *permitNumber = nil;
         NSString *address = nil;
         NSString *applicantName = nil;
+        
         if (row[8] != [NSNull null]) {
             permitNumber = row[8];
         }
-        if (row[10] != [NSNull null]) {
-            address = row[10];
-        }
-        if (row[16] != [NSNull null]) {
-            applicantName = row[16];
-        }
-        
         Application *application = [Application findOrCreateApplicationWithPermitNumber:permitNumber context:context];
         
-        if (address) {
+        if (row[10] != [NSNull null]) {
+            address = row[10];
+            
             Property *property = [Property findOrCreatePropertyWithAddress:address context:context];
             application.property = property;
         }
         
-        if (applicantName) {
+        if (row[16] != [NSNull null]) {
+            applicantName = row[16];
+            
             Applicant *applicant = [Applicant findOrCreateApplicantWithName:applicantName context:context];
             application.applicant = applicant;
         }
@@ -115,14 +111,11 @@ NSString *const applicationEntityName = @"Application";
             NSError *saveError;
             if (![context save:&saveError]) {
                 NSLog(@"Error while saving: %@", saveError.localizedDescription);
+                return NO;
             }
             count = 0;
         }
-        
     }
-    
-    NSLog(@"Core Data Insertions Finished");
-    
     return YES;
 }
 

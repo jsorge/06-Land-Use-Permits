@@ -11,15 +11,18 @@
 @class JMSLandUsePermitLoader;
 
 @protocol JMSLandUsePermitLoaderDelegate <NSObject>
-- (void)permitsFinishedLoading;
+- (void)permitLoader:(JMSLandUsePermitLoader *)loader didFinishWithSuccess:(BOOL)success;
 @end
 
 @interface JMSLandUsePermitLoader : NSObject <NSURLSessionDelegate>
+#pragma mark - Properties
+@property (nonatomic, unsafe_unretained)id<JMSLandUsePermitLoaderDelegate>delegate;
+
 #pragma mark - API
 /**
  *  Downloads the JSON data from Seattle and initiates parsing and populating of Core Data
  *
- *  @param context Managed Object Context
+ *  @param context Main Thread's Managed Object Context
  *
  *  @return Success or Failure
  */

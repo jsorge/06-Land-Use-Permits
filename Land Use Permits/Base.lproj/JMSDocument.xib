@@ -6,6 +6,7 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="JMSDocument">
             <connections>
+                <outlet property="downloadingDataLabel" destination="gAp-Db-h2n" id="VzS-ub-FPu"/>
                 <outlet property="dummyDataButton" destination="7b1-QM-qEz" id="LFd-Ag-Zsu"/>
                 <outlet property="fetchRemoteButton" destination="EW9-Mw-Wtf" id="LzT-rd-uan"/>
                 <outlet property="window" destination="5" id="18"/>
@@ -463,38 +464,6 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYb-T1-aNC">
-                                            <rect key="frame" x="17" y="17" width="364" height="112"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <clipView key="contentView" id="TzV-3u-Jgf">
-                                                <rect key="frame" x="1" y="1" width="362" height="110"/>
-                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                <subviews>
-                                                    <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="cW2-Ai-uco">
-                                                        <rect key="frame" x="0.0" y="0.0" width="362" height="110"/>
-                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <size key="minSize" width="362" height="110"/>
-                                                        <size key="maxSize" width="463" height="10000000"/>
-                                                        <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                        <size key="minSize" width="362" height="110"/>
-                                                        <size key="maxSize" width="463" height="10000000"/>
-                                                        <connections>
-                                                            <binding destination="qFZ-2K-L4N" name="data" keyPath="selection.applicationDescription" id="F2p-2T-q6d"/>
-                                                        </connections>
-                                                    </textView>
-                                                </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </clipView>
-                                            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="6S4-wo-cBO">
-                                                <rect key="frame" x="-100" y="-100" width="87" height="18"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                            </scroller>
-                                            <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="GLU-Bp-GAY">
-                                                <rect key="frame" x="347" y="1" width="16" height="110"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                            </scroller>
-                                        </scrollView>
                                         <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FLu-2P-5ks">
                                             <rect key="frame" x="483" y="25" width="184" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -586,6 +555,47 @@
                                                 </binding>
                                             </connections>
                                         </searchField>
+                                        <scrollView fixedFrame="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APm-v1-gvs">
+                                            <rect key="frame" x="17" y="25" width="364" height="101"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <clipView key="contentView" ambiguous="YES" misplaced="YES" id="rFB-Io-Cwf">
+                                                <rect key="frame" x="1" y="1" width="362" height="99"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <subviews>
+                                                    <textView ambiguous="YES" importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="C0l-jJ-Kls">
+                                                        <rect key="frame" x="0.0" y="0.0" width="362" height="99"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <size key="minSize" width="362" height="99"/>
+                                                        <size key="maxSize" width="463" height="10000000"/>
+                                                        <color key="insertionPointColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <size key="minSize" width="362" height="99"/>
+                                                        <size key="maxSize" width="463" height="10000000"/>
+                                                        <connections>
+                                                            <binding destination="qFZ-2K-L4N" name="attributedString" keyPath="selection.applicationDescription" id="ecD-Hv-njp"/>
+                                                        </connections>
+                                                    </textView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </clipView>
+                                            <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="2QK-xp-E0o">
+                                                <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </scroller>
+                                            <scroller key="verticalScroller" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="zWr-mU-Dq8">
+                                                <rect key="frame" x="347" y="1" width="16" height="99"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </scroller>
+                                        </scrollView>
+                                        <textField hidden="YES" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gAp-Db-h2n">
+                                            <rect key="frame" x="17" y="466" width="155" height="17"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Downloading Data" id="F5p-91-D4U">
+                                                <font key="font" metaFont="system"/>
+                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                            </textFieldCell>
+                                        </textField>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="53Q-1l-VGK" firstAttribute="top" secondItem="iy6-93-O1H" secondAttribute="top" id="0SQ-RD-Bxf"/>
@@ -593,7 +603,6 @@
                                         <constraint firstItem="Dtb-Ss-S0d" firstAttribute="baseline" secondItem="iy6-93-O1H" secondAttribute="baseline" id="4Ql-ME-NEb"/>
                                         <constraint firstItem="mfY-um-SHG" firstAttribute="top" secondItem="jVW-8c-hHV" secondAttribute="bottom" constant="8" symbolic="YES" id="4if-0V-12c"/>
                                         <constraint firstItem="wFH-8H-hwH" firstAttribute="trailing" secondItem="kcx-Mp-j3R" secondAttribute="trailing" id="4s8-81-ecm"/>
-                                        <constraint firstAttribute="bottom" secondItem="PYb-T1-aNC" secondAttribute="bottom" constant="17" id="6Fn-qm-pQr"/>
                                         <constraint firstItem="jVW-8c-hHV" firstAttribute="top" secondItem="bPt-JI-d6v" secondAttribute="bottom" constant="8" symbolic="YES" id="7TH-hD-tWy"/>
                                         <constraint firstItem="Dtb-Ss-S0d" firstAttribute="leading" secondItem="dwk-yY-qJa" secondAttribute="leading" id="814-eW-Ufq"/>
                                         <constraint firstItem="dwk-yY-qJa" firstAttribute="leading" secondItem="OtN-gg-sk2" secondAttribute="leading" constant="17" id="81O-Rm-XSx"/>
@@ -601,13 +610,11 @@
                                         <constraint firstItem="dwk-yY-qJa" firstAttribute="trailing" secondItem="3od-LJ-amN" secondAttribute="trailing" id="B6h-gw-fTj"/>
                                         <constraint firstItem="bXM-f0-7v3" firstAttribute="trailing" secondItem="yio-Pk-a8g" secondAttribute="trailing" id="DMc-T6-I4n"/>
                                         <constraint firstAttribute="trailing" secondItem="3od-LJ-amN" secondAttribute="trailing" constant="17" id="EfS-5n-Qsr"/>
-                                        <constraint firstItem="PYb-T1-aNC" firstAttribute="trailing" secondItem="53Q-1l-VGK" secondAttribute="trailing" id="J2g-IB-86e"/>
                                         <constraint firstItem="mhA-ZE-BZj" firstAttribute="leading" secondItem="bPt-JI-d6v" secondAttribute="trailing" constant="8" symbolic="YES" id="Key-u6-Jiu"/>
                                         <constraint firstItem="yio-Pk-a8g" firstAttribute="leading" secondItem="bXM-f0-7v3" secondAttribute="leading" id="MGt-by-4eh"/>
                                         <constraint firstItem="wFH-8H-hwH" firstAttribute="top" secondItem="kcx-Mp-j3R" secondAttribute="bottom" constant="8" symbolic="YES" id="POo-2a-NOb"/>
                                         <constraint firstItem="mhA-ZE-BZj" firstAttribute="trailing" secondItem="bXM-f0-7v3" secondAttribute="trailing" id="QCc-DD-fbV"/>
                                         <constraint firstItem="mhA-ZE-BZj" firstAttribute="top" secondItem="Qc7-5e-HGO" secondAttribute="bottom" constant="17" id="S7g-iw-gw3"/>
-                                        <constraint firstItem="HeB-aI-2RC" firstAttribute="leading" secondItem="PYb-T1-aNC" secondAttribute="leading" id="Sl0-hc-rUJ"/>
                                         <constraint firstItem="iy6-93-O1H" firstAttribute="leading" secondItem="Dtb-Ss-S0d" secondAttribute="trailing" constant="18" id="TjP-jq-KK7"/>
                                         <constraint firstItem="FLu-2P-5ks" firstAttribute="baseline" secondItem="Oed-fx-Ms1" secondAttribute="baseline" id="Vud-iQ-XC3"/>
                                         <constraint firstItem="Qc7-5e-HGO" firstAttribute="trailing" secondItem="mhA-ZE-BZj" secondAttribute="trailing" id="Wim-nI-uz8"/>
@@ -635,7 +642,6 @@
                                         <constraint firstItem="mfY-um-SHG" firstAttribute="baseline" secondItem="yio-Pk-a8g" secondAttribute="baseline" id="yIU-gE-1aQ"/>
                                         <constraint firstItem="FLu-2P-5ks" firstAttribute="top" secondItem="yio-Pk-a8g" secondAttribute="bottom" constant="5" id="z7E-Te-VsL"/>
                                         <constraint firstItem="3od-LJ-amN" firstAttribute="top" secondItem="OtN-gg-sk2" secondAttribute="top" constant="3" id="zAj-SJ-kOh"/>
-                                        <constraint firstItem="PYb-T1-aNC" firstAttribute="top" secondItem="53Q-1l-VGK" secondAttribute="bottom" constant="38" id="zyV-vJ-pF7"/>
                                     </constraints>
                                 </view>
                             </tabViewItem>
