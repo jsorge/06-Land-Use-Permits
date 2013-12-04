@@ -1,6 +1,14 @@
 #import "_Application.h"
 
+@class Application;
+
+@protocol ApplicationParseProgress <NSObject>
+- (void)applicationParseProgress:(NSInteger *)progress;
+@end
+
 @interface Application : _Application {}
+
+@property (nonatomic, unsafe_unretained)id<ApplicationParseProgress>delegate;
 
 #pragma mark - API
 /**

@@ -16,6 +16,7 @@
 @property (weak) IBOutlet NSToolbarItem *dummyDataButton;
 @property (weak) IBOutlet NSToolbarItem *fetchRemoteButton;
 @property (weak) IBOutlet NSTextField *downloadingDataLabel;
+@property (weak) IBOutlet NSProgressIndicator *progressBar;
 @end
 
 @implementation JMSDocument
@@ -85,7 +86,11 @@
 - (IBAction)fetchRemoteData:(id)sender
 {
     [self.fetchRemoteButton setEnabled:NO];
+    
     [self.downloadingDataLabel setHidden:NO];
+    [self.progressBar setHidden:NO];
+    [self.progressBar startAnimation:self];
+    
     JMSLandUsePermitLoader *permitLoader = [[JMSLandUsePermitLoader alloc] init];
     permitLoader.delegate = self;
     [permitLoader downloadAndParseData:self.managedObjectContext];
@@ -95,7 +100,16 @@
 - (void)permitLoader:(JMSLandUsePermitLoader *)loader didFinishWithSuccess:(BOOL)success
 {
     [self.fetchRemoteButton setEnabled:YES];
+    
     [self.downloadingDataLabel setHidden:YES];
+    [self.progressBar setHidden:YES];
+    [self.progressBar stopAnimation:self];
+}
+
+#pragma mark - Toolbar Vaildation
+- (BOOL)validateToolbarItem:(NSToolbarItem *)theItem
+{
+    return [theItem isEnabled];
 }
 
 @end

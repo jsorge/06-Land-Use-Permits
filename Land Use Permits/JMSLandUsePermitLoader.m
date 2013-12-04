@@ -9,6 +9,9 @@
 #import "JMSLandUsePermitLoader.h"
 #import "Application.h"
 
+@interface JMSLandUsePermitLoader ()
+@end
+
 @implementation JMSLandUsePermitLoader
 #pragma mark - API
 - (BOOL)downloadAndParseData:(NSManagedObjectContext *)mainContext
@@ -26,7 +29,6 @@
                                                          if (!error) {
                                                              [workerContext performBlock:^{
                                                                  success = [Application repopulateWithData:data inContext:workerContext];
-                                                                 
                                                                  [self.delegate permitLoader:self
                                                                         didFinishWithSuccess:success];
                                                              }];

@@ -7,10 +7,12 @@ NSString *const applicationPermitToken = @"PERMIT_NUMBER";
 NSString *const applicationEntityName = @"Application";
 
 @interface Application ()
+
 @end
 
 
 @implementation Application
+@synthesize delegate = _delegate;
 
 #pragma mark - Inserts
 - (void)awakeFromInsert
@@ -72,9 +74,12 @@ NSString *const applicationEntityName = @"Application";
     NSNumberFormatter *decimalFormat = [[NSNumberFormatter alloc] init];
     decimalFormat.numberStyle = NSNumberFormatterDecimalStyle;
     
-//    [Application exploreDatabase:database];
+    NSUInteger totalRows = [database[@"data"] count];
+    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInteger:totalRows]
+                                              forKey:@"jsonTotal"];
+    NSUInteger totalProgress = 0;
     
-    int count = 0;
+    NSUInteger count = 0;
     for (NSArray *row in database[@"data"]) {
         NSString *permitNumber = nil;
         NSString *address = nil;
@@ -84,7 +89,7 @@ NSString *const applicationEntityName = @"Application";
             permitNumber = row[8];
         }
         Application *application = [Application findOrCreateApplicationWithPermitNumber:permitNumber context:context];
-        if (application) {
+        if (permitNumber) {
             if (row[9] != [NSNull null]) {
                 application.permitType = row[9];
             }
@@ -156,7 +161,10 @@ NSString *const applicationEntityName = @"Application";
                 NSLog(@"Error while saving: %@", saveError.localizedDescription);
                 return NO;
             }
+            totalProgress += count;
             count = 0;
+            [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInteger:totalProgress]
+                                                      forKey:@"jsonProgress"];
         }
     }
     return YES;

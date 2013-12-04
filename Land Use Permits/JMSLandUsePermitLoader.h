@@ -15,7 +15,6 @@
 @end
 
 @interface JMSLandUsePermitLoader : NSObject <NSURLSessionDelegate>
-#pragma mark - Properties
 @property (nonatomic, unsafe_unretained)id<JMSLandUsePermitLoaderDelegate>delegate;
 
 #pragma mark - API

@@ -9,6 +9,7 @@
                 <outlet property="downloadingDataLabel" destination="gAp-Db-h2n" id="VzS-ub-FPu"/>
                 <outlet property="dummyDataButton" destination="7b1-QM-qEz" id="LFd-Ag-Zsu"/>
                 <outlet property="fetchRemoteButton" destination="EW9-Mw-Wtf" id="LzT-rd-uan"/>
+                <outlet property="progressBar" destination="v7F-cJ-ssc" id="h1l-EE-cZ2"/>
                 <outlet property="window" destination="5" id="18"/>
             </connections>
         </customObject>
@@ -41,13 +42,13 @@
                                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 <subviews>
                                                     <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" autosaveColumns="NO" headerView="Wtl-K5-nDr" id="OoR-YV-eH0">
-                                                        <rect key="frame" x="0.0" y="0.0" width="1326" height="235"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="2461" height="235"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <size key="intercellSpacing" width="3" height="2"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                         <tableColumns>
-                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="ZYX-tt-sKl">
+                                                            <tableColumn width="150" minWidth="10" maxWidth="3.4028234663852886e+38" id="ZYX-tt-sKl">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Permit #">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -63,7 +64,7 @@
                                                                     <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.applicationPermitNumber" id="Wgh-Li-V3T"/>
                                                                 </connections>
                                                             </tableColumn>
-                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="C8p-0s-Fu6">
+                                                            <tableColumn width="150" minWidth="10" maxWidth="3.4028234663852886e+38" id="C8p-0s-Fu6">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Address">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -79,7 +80,7 @@
                                                                     <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.property.address" id="Jug-OM-PcH"/>
                                                                 </connections>
                                                             </tableColumn>
-                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" hidden="YES" id="Nu3-Wy-kBn">
+                                                            <tableColumn width="150" minWidth="10" maxWidth="3.4028234663852886e+38" id="Nu3-Wy-kBn">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Appealed?">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -95,7 +96,7 @@
                                                                     <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.appealed" id="Ccr-Sm-A70"/>
                                                                 </connections>
                                                             </tableColumn>
-                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="mjJ-34-f3r">
+                                                            <tableColumn width="150" minWidth="10" maxWidth="3.4028234663852886e+38" id="mjJ-34-f3r">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Name">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -111,7 +112,7 @@
                                                                     <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.applicant.name" id="SiL-S5-ExG"/>
                                                                 </connections>
                                                             </tableColumn>
-                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="NdR-YP-3yf">
+                                                            <tableColumn width="150" minWidth="10" maxWidth="3.4028234663852886e+38" id="NdR-YP-3yf">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Date">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -121,13 +122,16 @@
                                                                     <font key="font" metaFont="system"/>
                                                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                    <connections>
+                                                                        <outlet property="formatter" destination="Zp6-iE-IlM" id="Xt4-By-aSK"/>
+                                                                    </connections>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                 <connections>
                                                                     <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.applicationDate" id="wkb-Tc-zM4"/>
                                                                 </connections>
                                                             </tableColumn>
-                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" hidden="YES" id="EvD-mg-Ig5">
+                                                            <tableColumn width="150" minWidth="10" maxWidth="3.4028234663852886e+38" id="EvD-mg-Ig5">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Description">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -143,7 +147,7 @@
                                                                     <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.applicationDescription" id="SvY-Ew-wbI"/>
                                                                 </connections>
                                                             </tableColumn>
-                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="tJE-0R-9Kb">
+                                                            <tableColumn width="150" minWidth="10" maxWidth="3.4028234663852886e+38" id="tJE-0R-9Kb">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Category">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -159,7 +163,7 @@
                                                                     <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.category" id="67H-AG-wgH"/>
                                                                 </connections>
                                                             </tableColumn>
-                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="vJZ-ce-Qi8">
+                                                            <tableColumn width="150" minWidth="10" maxWidth="3.4028234663852886e+38" id="vJZ-ce-Qi8">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Contractor">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -175,7 +179,7 @@
                                                                     <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.contractor" id="1a0-Kq-BiB"/>
                                                                 </connections>
                                                             </tableColumn>
-                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="Hm5-nz-3Cc">
+                                                            <tableColumn width="150" minWidth="10" maxWidth="3.4028234663852886e+38" id="Hm5-nz-3Cc">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Decision Date">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -185,13 +189,16 @@
                                                                     <font key="font" metaFont="system"/>
                                                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                    <connections>
+                                                                        <outlet property="formatter" destination="Zp6-iE-IlM" id="CyH-Gu-uUu"/>
+                                                                    </connections>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                 <connections>
                                                                     <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.decisionDate" id="vJP-sv-Y67"/>
                                                                 </connections>
                                                             </tableColumn>
-                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="lF8-9D-KIn">
+                                                            <tableColumn width="150" minWidth="10" maxWidth="3.4028234663852886e+38" id="lF8-9D-KIn">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Decision Type">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -207,7 +214,7 @@
                                                                     <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.decisionType" id="LUp-hF-09g"/>
                                                                 </connections>
                                                             </tableColumn>
-                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" hidden="YES" id="MFh-kr-D3v">
+                                                            <tableColumn width="150" minWidth="10" maxWidth="3.4028234663852886e+38" id="MFh-kr-D3v">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Design Review Included?">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -223,7 +230,7 @@
                                                                     <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.designReviewIncluded" id="hLA-bB-zdX"/>
                                                                 </connections>
                                                             </tableColumn>
-                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" hidden="YES" id="Spa-mG-YAN">
+                                                            <tableColumn width="150" minWidth="10" maxWidth="3.4028234663852886e+38" id="Spa-mG-YAN">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Latitude">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -239,7 +246,7 @@
                                                                     <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.latitude" id="OtV-ed-sYI"/>
                                                                 </connections>
                                                             </tableColumn>
-                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" hidden="YES" id="bMn-X4-ePR">
+                                                            <tableColumn width="150" minWidth="10" maxWidth="3.4028234663852886e+38" id="bMn-X4-ePR">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Longitude">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -255,7 +262,7 @@
                                                                     <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.longitude" id="ldh-bE-wz4"/>
                                                                 </connections>
                                                             </tableColumn>
-                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="i0G-FC-8mh">
+                                                            <tableColumn width="150" minWidth="10" maxWidth="3.4028234663852886e+38" id="i0G-FC-8mh">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Status">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -271,7 +278,7 @@
                                                                     <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.status" id="vFW-Ey-Vpq"/>
                                                                 </connections>
                                                             </tableColumn>
-                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="1Hl-db-5Hd">
+                                                            <tableColumn width="150" minWidth="10" maxWidth="3.4028234663852886e+38" id="1Hl-db-5Hd">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Status URL">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -287,7 +294,7 @@
                                                                     <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.statusURL" id="SZ3-fU-LKC"/>
                                                                 </connections>
                                                             </tableColumn>
-                                                            <tableColumn width="75" minWidth="10" maxWidth="3.4028234663852886e+38" id="QNh-xF-9Sm">
+                                                            <tableColumn width="150" minWidth="10" maxWidth="3.4028234663852886e+38" id="QNh-xF-9Sm">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Permit Type">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -303,7 +310,7 @@
                                                                     <binding destination="qFZ-2K-L4N" name="value" keyPath="arrangedObjects.permitType" id="5zg-Uq-9aH"/>
                                                                 </connections>
                                                             </tableColumn>
-                                                            <tableColumn width="465" minWidth="10" maxWidth="3.4028234663852886e+38" id="H0k-kW-tBm">
+                                                            <tableColumn width="10" minWidth="10" maxWidth="3.4028234663852886e+38" id="H0k-kW-tBm">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Value">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -313,6 +320,9 @@
                                                                     <font key="font" metaFont="system"/>
                                                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                    <connections>
+                                                                        <outlet property="formatter" destination="Zv6-ok-oaV" id="18U-7b-G5p"/>
+                                                                    </connections>
                                                                 </textFieldCell>
                                                                 <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                                 <connections>
@@ -333,7 +343,7 @@
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
                                             <tableHeaderView key="headerView" id="Wtl-K5-nDr">
-                                                <rect key="frame" x="0.0" y="0.0" width="1326" height="17"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="2461" height="17"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </tableHeaderView>
                                         </scrollView>
@@ -474,6 +484,7 @@
                                             </textFieldCell>
                                             <connections>
                                                 <binding destination="qFZ-2K-L4N" name="value" keyPath="selection.value" id="AXi-N5-iLr"/>
+                                                <outlet property="formatter" destination="Zv6-ok-oaV" id="dWF-3W-4UE"/>
                                             </connections>
                                         </textField>
                                         <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yio-Pk-a8g">
@@ -486,6 +497,7 @@
                                             </textFieldCell>
                                             <connections>
                                                 <binding destination="qFZ-2K-L4N" name="value" keyPath="selection.issueDate" id="Fxt-uX-7Au"/>
+                                                <outlet property="formatter" destination="Zp6-iE-IlM" id="dI1-yY-pXN"/>
                                             </connections>
                                         </textField>
                                         <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bXM-f0-7v3">
@@ -498,6 +510,7 @@
                                             </textFieldCell>
                                             <connections>
                                                 <binding destination="qFZ-2K-L4N" name="value" keyPath="selection.decisionDate" id="e0F-KA-X45"/>
+                                                <outlet property="formatter" destination="Zp6-iE-IlM" id="KQL-rX-ioS"/>
                                             </connections>
                                         </textField>
                                         <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mhA-ZE-BZj">
@@ -510,6 +523,7 @@
                                             </textFieldCell>
                                             <connections>
                                                 <binding destination="qFZ-2K-L4N" name="value" keyPath="selection.applicationDate" id="G7j-VU-F2x"/>
+                                                <outlet property="formatter" destination="Zp6-iE-IlM" id="tFX-lo-xve"/>
                                             </connections>
                                         </textField>
                                         <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Qc7-5e-HGO">
@@ -599,6 +613,14 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
+                                        <progressIndicator hidden="YES" fixedFrame="YES" maxValue="100" indeterminate="YES" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="v7F-cJ-ssc">
+                                            <rect key="frame" x="151" y="462" width="230" height="20"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                            <connections>
+                                                <binding destination="CzA-UO-BCz" name="value" keyPath="values.jsonProgress" previousBinding="Wdo-dh-sKR" id="Zam-Wf-9Rd"/>
+                                                <binding destination="CzA-UO-BCz" name="maxValue" keyPath="values.jsonTotal" id="Wdo-dh-sKR"/>
+                                            </connections>
+                                        </progressIndicator>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="53Q-1l-VGK" firstAttribute="top" secondItem="iy6-93-O1H" secondAttribute="top" id="0SQ-RD-Bxf"/>
@@ -1201,7 +1223,7 @@
                             <action selector="insertFakeData:" target="-2" id="lqc-GP-5AO"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="01DFC668-0DD0-453E-8872-795BF3D6A10C" label="Fetch Remote Data" paletteLabel="Fetch Remote Data" tag="-1" image="Download Icon" id="EW9-Mw-Wtf">
+                    <toolbarItem implicitItemIdentifier="01DFC668-0DD0-453E-8872-795BF3D6A10C" label="Fetch Remote Data" paletteLabel="Fetch Remote Data" tag="-1" image="DownloadEnabled" id="EW9-Mw-Wtf">
                         <connections>
                             <action selector="fetchRemoteData:" target="-2" id="mM4-ZW-Xah"/>
                         </connections>
@@ -1252,9 +1274,17 @@
                 <binding destination="VXb-BK-dg3" name="contentSet" keyPath="selection.applications" id="dxq-E5-EpO"/>
             </connections>
         </arrayController>
+        <numberFormatter formatterBehavior="default10_4" positiveFormat="¤#,##0.00" negativeFormat="(¤#,##0.00)" numberStyle="currency" minimumIntegerDigits="1" maximumIntegerDigits="309" minimumFractionDigits="2" maximumFractionDigits="2" positivePrefix="$" negativePrefix="($" negativeSuffix=")" id="Zv6-ok-oaV">
+            <real key="roundingIncrement" value="0.0"/>
+            <metadata>
+                <bool key="localizesFormat" value="YES"/>
+            </metadata>
+        </numberFormatter>
+        <dateFormatter dateStyle="medium" id="Zp6-iE-IlM"/>
+        <userDefaultsController representsSharedInstance="YES" id="CzA-UO-BCz"/>
     </objects>
     <resources>
-        <image name="Download Icon" width="128" height="128"/>
+        <image name="DownloadEnabled" width="128" height="128"/>
         <image name="Dummy Icon" width="695" height="695"/>
     </resources>
 </document>
