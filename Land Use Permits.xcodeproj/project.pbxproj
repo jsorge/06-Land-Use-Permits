@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		932BB6B3184EE1F0004D5F1E /* JMSBOOLValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 932BB6B2184EE1F0004D5F1E /* JMSBOOLValueTransformer.m */; };
 		934A049C1845BA3E004CA0F6 /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = 934A049B1845BA3E004CA0F6 /* Application.m */; };
 		934A04A41847A95F004CA0F6 /* _Applicant.m in Sources */ = {isa = PBXBuildFile; fileRef = 934A049F1847A95F004CA0F6 /* _Applicant.m */; };
 		934A04A51847A960004CA0F6 /* _Application.m in Sources */ = {isa = PBXBuildFile; fileRef = 934A04A11847A95F004CA0F6 /* _Application.m */; };
@@ -25,6 +26,7 @@
 		93D560E118404ABF00933529 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D560BA18404ABE00933529 /* Cocoa.framework */; };
 		93D560E918404ABF00933529 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93D560E718404ABF00933529 /* InfoPlist.strings */; };
 		93D560EB18404ABF00933529 /* Land_Use_PermitsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D560EA18404ABF00933529 /* Land_Use_PermitsTests.m */; };
+		93DE5D7518556321008418CD /* JMSApplicationDescriptionValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DE5D7418556321008418CD /* JMSApplicationDescriptionValueTransformer.m */; };
 		93DEB4BA184163CD00C8A080 /* Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DEB4B9184163CD00C8A080 /* Property.m */; };
 		93DEB4BD184163CD00C8A080 /* Applicant.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DEB4BC184163CD00C8A080 /* Applicant.m */; };
 /* End PBXBuildFile section */
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		932BB6B1184EE1F0004D5F1E /* JMSBOOLValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSBOOLValueTransformer.h; sourceTree = "<group>"; };
+		932BB6B2184EE1F0004D5F1E /* JMSBOOLValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSBOOLValueTransformer.m; sourceTree = "<group>"; };
 		934A049A1845BA3E004CA0F6 /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Application.h; path = Model/Application.h; sourceTree = "<group>"; };
 		934A049B1845BA3E004CA0F6 /* Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Application.m; path = Model/Application.m; sourceTree = "<group>"; };
 		934A049E1847A95F004CA0F6 /* _Applicant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = _Applicant.h; path = Model/_Applicant.h; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 		93D560E618404ABF00933529 /* Land Use PermitsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Land Use PermitsTests-Info.plist"; sourceTree = "<group>"; };
 		93D560E818404ABF00933529 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		93D560EA18404ABF00933529 /* Land_Use_PermitsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Land_Use_PermitsTests.m; sourceTree = "<group>"; };
+		93DE5D7318556320008418CD /* JMSApplicationDescriptionValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMSApplicationDescriptionValueTransformer.h; sourceTree = "<group>"; };
+		93DE5D7418556321008418CD /* JMSApplicationDescriptionValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMSApplicationDescriptionValueTransformer.m; sourceTree = "<group>"; };
 		93DEB4B8184163CD00C8A080 /* Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Property.h; path = Model/Property.h; sourceTree = "<group>"; };
 		93DEB4B9184163CD00C8A080 /* Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Property.m; path = Model/Property.m; sourceTree = "<group>"; };
 		93DEB4BB184163CD00C8A080 /* Applicant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Applicant.h; path = Model/Applicant.h; sourceTree = "<group>"; };
@@ -141,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				93D560FD18404F8A00933529 /* Model */,
+				93DE5D7618556326008418CD /* Value Transformers */,
 				934A04A71847AE1D004CA0F6 /* JMSLandUsePermitLoader.h */,
 				934A04A81847AE1D004CA0F6 /* JMSLandUsePermitLoader.m */,
 				93D560CC18404ABF00933529 /* JMSDocument.h */,
@@ -201,6 +208,17 @@
 				93DEB4B9184163CD00C8A080 /* Property.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		93DE5D7618556326008418CD /* Value Transformers */ = {
+			isa = PBXGroup;
+			children = (
+				932BB6B1184EE1F0004D5F1E /* JMSBOOLValueTransformer.h */,
+				932BB6B2184EE1F0004D5F1E /* JMSBOOLValueTransformer.m */,
+				93DE5D7318556320008418CD /* JMSApplicationDescriptionValueTransformer.h */,
+				93DE5D7418556321008418CD /* JMSApplicationDescriptionValueTransformer.m */,
+			);
+			name = "Value Transformers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,7 +346,9 @@
 				934A04A91847AE1D004CA0F6 /* JMSLandUsePermitLoader.m in Sources */,
 				93D560C718404ABF00933529 /* main.m in Sources */,
 				93D560CE18404ABF00933529 /* JMSDocument.m in Sources */,
+				93DE5D7518556321008418CD /* JMSApplicationDescriptionValueTransformer.m in Sources */,
 				934A04A61847A960004CA0F6 /* _Property.m in Sources */,
+				932BB6B3184EE1F0004D5F1E /* JMSBOOLValueTransformer.m in Sources */,
 				93DEB4BA184163CD00C8A080 /* Property.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

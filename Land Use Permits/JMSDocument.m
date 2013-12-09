@@ -17,6 +17,8 @@
 @property (weak) IBOutlet NSToolbarItem *fetchRemoteButton;
 @property (weak) IBOutlet NSTextField *downloadingDataLabel;
 @property (weak) IBOutlet NSProgressIndicator *progressBar;
+@property (nonatomic)NSUInteger currentProgressValue;
+@property (strong, nonatomic)NSTimer *timer;
 @end
 
 @implementation JMSDocument
@@ -59,6 +61,10 @@
 - (IBAction)insertFakeData:(id)sender
 {
     [self.dummyDataButton setEnabled:NO];
+    self.progressBar.maxValue = 100;
+    [self.progressBar setHidden:NO];
+    [self.progressBar startAnimation:self];
+    [self startTimer];
     
     Applicant *larry = [Applicant findOrCreateApplicantWithName:@"Larry" context:self.managedObjectContext];
     Applicant *curly = [Applicant findOrCreateApplicantWithName:@"Curly" context:self.managedObjectContext];
@@ -87,7 +93,11 @@
 {
     [self.fetchRemoteButton setEnabled:NO];
     
+    [[NSUserDefaults standardUserDefaults] setObject:@0
+                                              forKey:@"jsonProgress"];
+    
     [self.downloadingDataLabel setHidden:NO];
+    self.progressBar.doubleValue = 0;
     [self.progressBar setHidden:NO];
     [self.progressBar startAnimation:self];
     
@@ -112,4 +122,30 @@
     return [theItem isEnabled];
 }
 
+#pragma mark - Timer
+- (void)updateProgressBar
+{
+    self.currentProgressValue += 5;
+    self.progressBar.doubleValue = self.currentProgressValue;
+    
+    if (self.currentProgressValue == 100) {
+        [self stopTimer];
+    }
+}
+
+- (void)startTimer
+{
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.2
+                                                  target:self
+                                                selector:@selector(updateProgressBar)
+                                                userInfo:nil
+                                                 repeats:YES];
+}
+
+- (void)stopTimer
+{
+    [self.timer invalidate];
+    [self.progressBar setHidden:YES];
+    [self.progressBar stopAnimation:self];
+}
 @end

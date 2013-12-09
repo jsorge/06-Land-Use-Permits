@@ -74,9 +74,12 @@ NSString *const applicationEntityName = @"Application";
     NSNumberFormatter *decimalFormat = [[NSNumberFormatter alloc] init];
     decimalFormat.numberStyle = NSNumberFormatterDecimalStyle;
     
-    NSUInteger totalRows = [database[@"data"] count];
-    [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInteger:totalRows]
-                                              forKey:@"jsonTotal"];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSUInteger totalRows = [database[@"data"] count];
+        [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInteger:totalRows]
+                                                  forKey:@"jsonTotal"];
+    });
+    
     NSUInteger totalProgress = 0;
     
     NSUInteger count = 0;
@@ -163,47 +166,13 @@ NSString *const applicationEntityName = @"Application";
             }
             totalProgress += count;
             count = 0;
-            [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInteger:totalProgress]
-                                                      forKey:@"jsonProgress"];
+            
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInteger:totalProgress]
+                                                          forKey:@"jsonProgress"];
+            });
         }
     }
     return YES;
 }
-
-#pragma mark - Starting Code
-+ (void)exploreDatabase:(NSDictionary *)database
-{
-    NSArray *data = database[@"data"];
-    NSDictionary *meta = database[@"meta"];
-    NSLog(@"meta keys: %@", [meta allKeys]);
-    NSDictionary *view = meta[@"view"];
-    NSLog(@"view keys: %@", [view allKeys]);
-    NSArray *columns = view[@"columns"];
-    NSLog(@"columns are of class %@", columns.class);
-    NSLog(@"column elements are of class %@", [columns[0] class]);
-    NSDictionary *aColumnElement = columns[0];
-    NSLog(@"column keys are: %@", [aColumnElement allKeys]);
-    
-    int columnCount = 0;
-    NSLog(@"column values: position name description dataTypeName fieldName");
-    for (NSDictionary *obj in columns) {
-        columnCount ++;
-        NSLog(@"column %d: %@ %@ %@ %@ %@", columnCount, obj[@"position"], obj[@"name"], obj[@"description"], obj[@"dataTypeName"], obj[@"fieldName"]);
-    }
-    NSLog(@"meta %@ %@", meta.class, meta.allKeys);
-    NSLog(@"view %@ %@", view.class, view.allKeys);
-    
-    int j = 0;
-    for (NSArray *row in data) {
-        j++;
-        int i = 0;
-        for (id col in row) {
-            NSLog(@"%d %@", i++, col);
-        }
-        if (j > 20) {
-            break;
-        }
-    }
-}
-
 @end

@@ -14,15 +14,14 @@
 
 @implementation JMSLandUsePermitLoader
 #pragma mark - API
-- (BOOL)downloadAndParseData:(NSManagedObjectContext *)mainContext
+- (void)downloadAndParseData:(NSManagedObjectContext *)mainContext
 {
     __block BOOL success = YES;
     
     NSManagedObjectContext *workerContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
     workerContext.parentContext = mainContext;
     
-    NSURLSessionConfiguration *sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
-    NSURLSession *downloadSession = [NSURLSession sessionWithConfiguration:sessionConfig];
+    NSURLSession *downloadSession = [NSURLSession sharedSession];
     NSURL *downloadURL = [NSURL URLWithString:[Application jsonDownloadURL]];
     NSURLSessionTask *downloadTask =  [downloadSession dataTaskWithURL:downloadURL
                                                      completionHandler:^(NSData *data, NSURLResponse *response, NSError *error){
@@ -34,11 +33,8 @@
                                                              }];
                                                          } else {
                                                              NSLog(@"Data download failed with error: %@", error.localizedDescription);
-                                                             success = NO;
                                                          }
                                                      }];
     [downloadTask resume];
-    
-    return success;
 }
 @end

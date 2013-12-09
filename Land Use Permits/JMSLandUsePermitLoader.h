@@ -11,6 +11,12 @@
 @class JMSLandUsePermitLoader;
 
 @protocol JMSLandUsePermitLoaderDelegate <NSObject>
+/**
+ *  Called after the PermitLoader finished downlaoding and parsing
+ *
+ *  @param loader  The JMSLandUsePermitLoader object
+ *  @param success BOOL value of the success/failure of the downloading and parsing
+ */
 - (void)permitLoader:(JMSLandUsePermitLoader *)loader didFinishWithSuccess:(BOOL)success;
 @end
 
@@ -22,8 +28,6 @@
  *  Downloads the JSON data from Seattle and initiates parsing and populating of Core Data
  *
  *  @param context Main Thread's Managed Object Context
- *
- *  @return Success or Failure
  */
-- (BOOL)downloadAndParseData:(NSManagedObjectContext *)context;
+- (void)downloadAndParseData:(NSManagedObjectContext *)context;
 @end
