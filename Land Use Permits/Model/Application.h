@@ -47,5 +47,4 @@
  *  @return YES/NO
  */
 + (BOOL)repopulateWithData:(NSData *)data inContext:(NSManagedObjectContext *)context;
-
 @end
